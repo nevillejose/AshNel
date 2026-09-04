@@ -1,0 +1,16 @@
+[Unit]
+Description=ASHNEL INC. Studio API Microservice
+After=network.target
+
+[Service]
+Type=simple
+User=dev
+Group=dev
+WorkingDirectory=/home/ashnel.com/api
+ExecStart=/usr/bin/python3 /home/ashnel.com/api/server.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

@@ -1115,6 +1115,9 @@
               </label>
             </div>
 
+            <!-- Honeypot anti-spam -->
+            <input type="text" id="intake-hp" name="website_url_hp" class="hidden" tabindex="-1" autocomplete="off">
+
             <div class="flex items-center justify-between pt-4">
               <button type="button" onclick="goToStep(2)" class="btn-secondary">
                 <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1122,9 +1125,9 @@
                 </svg>
                 <span>Back</span>
               </button>
-              <button type="submit" class="btn-primary">
-                <span>Submit & Open Advisory Calendar</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <button type="submit" id="intake-submit-btn" class="btn-primary">
+                <span id="intake-submit-text">Submit & Open Advisory Calendar</span>
+                <svg id="intake-submit-icon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
               </button>

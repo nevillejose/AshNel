@@ -171,14 +171,75 @@ function updateSummary() {
   }
 }
 
-// Handle Form Submission
-function handleFormSubmit() {
+// Handle Form Submission with Backend API Dispatch
+async function handleFormSubmit() {
   const form = document.getElementById('intake-form');
   const successBox = document.getElementById('intake-success');
+  const submitBtn = document.getElementById('intake-submit-btn');
+  const submitText = document.getElementById('intake-submit-text');
 
-  if (form && successBox) {
-    form.classList.add('hidden');
-    successBox.classList.remove('hidden');
+  const trackInput = document.querySelector('input[name="track"]:checked');
+  const timelineInput = document.querySelector('input[name="timeline"]:checked');
+  const nameInput = document.getElementById('intake-name');
+  const emailInput = document.getElementById('intake-email');
+  const scopeInput = document.getElementById('intake-scope');
+  const dpdpInput = document.getElementById('estimator-dpdp-consent');
+  const hpInput = document.getElementById('intake-hp');
+
+  const trackLabels = {
+    'startup_mvp': 'New Startup MVP (Turnkey)',
+    'faith_portal': 'Religious & Community Portal (Institutional Tech)',
+    'compliance_setup': 'Regulatory, MSME & Compliance Tech'
+  };
+
+  const timelineLabels = {
+    '30_days': '30-Day Velocity Sprint',
+    '60_days': '60-Day Complete Platform',
+    'exploratory': 'Exploratory Advisory & Blueprint'
+  };
+
+  const payload = {
+    track: trackLabels[trackInput ? trackInput.value : ''] || 'Turnkey MVP',
+    timeline: timelineLabels[timelineInput ? timelineInput.value : ''] || '30-Day Sprint',
+    name: nameInput ? nameInput.value.trim() : '',
+    email: emailInput ? emailInput.value.trim() : '',
+    scope: scopeInput ? scopeInput.value.trim() : '',
+    dpdp_consent: dpdpInput ? dpdpInput.checked : false,
+    website_url_hp: hpInput ? hpInput.value.trim() : ''
+  };
+
+  if (submitBtn) submitBtn.disabled = true;
+  if (submitText) submitText.textContent = 'Transmitting Brief to Studio...';
+
+  try {
+    const res = await fetch('/api/intake', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (res.ok) {
+      if (form && successBox) {
+        form.classList.add('hidden');
+        successBox.classList.remove('hidden');
+      }
+    } else {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.error || 'Transmission error');
+    }
+  } catch (err) {
+    console.error('Intake transmission error:', err);
+    if (form && successBox) {
+      form.classList.add('hidden');
+      successBox.classList.remove('hidden');
+      const fallbackNote = document.createElement('div');
+      fallbackNote.className = 'mt-4 text-xs text-amber-800 bg-amber-50 p-3 rounded-xl border border-amber-200';
+      fallbackNote.innerHTML = `Note: Direct dispatch link: <a href="mailto:ashnelinc.in@gmail.com?subject=Project%20Scope%20Brief%20(${encodeURIComponent(payload.name)})&body=${encodeURIComponent('Track: ' + payload.track + '\nTimeline: ' + payload.timeline + '\nScope: ' + payload.scope + '\nEmail: ' + payload.email)}" class="font-bold underline text-amber-900">Send via Email &rarr;</a>`;
+      successBox.appendChild(fallbackNote);
+    }
+  } finally {
+    if (submitBtn) submitBtn.disabled = false;
+    if (submitText) submitText.textContent = 'Submit & Open Advisory Calendar';
   }
 }
 
