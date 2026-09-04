@@ -7,6 +7,7 @@
   <title>Case Study 07: Literature & Digital Publishing — ASHNEL INC.</title>
   <meta name="description"
     content="Production case study of a digital publishing repository and sovereign e-reader for institutional treatises and periodicals with zero-telemetry hosting.">
+  <link rel="icon" type="image/png" href="../assets/Logo@s.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,8 +67,15 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 bg-slate-50 border-b border-slate-200">
+
+    <!-- Background Watermark Logo (50% Opacity, trimmed right and bottom) -->
+    <div
+      class="absolute -right-20 sm:-right-28 md:-right-36 lg:-right-40 -bottom-16 sm:-bottom-24 md:-bottom-32 lg:-bottom-36 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[680px] pointer-events-none select-none opacity-50 z-0">
+      <img src="../assets/Logo@.png" alt="" class="w-full h-full object-contain">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl">
         <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
           <div class="flex items-center gap-2">
@@ -266,9 +274,10 @@
       <div>&copy; 2016&ndash;2026 ASHNEL INC. All rights reserved. Registered MSME Enterprise.</div>
       <div class="flex items-center gap-6">
         <a href="../index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="index.html" class="text-amber-400">Case Studies</a>
-        <a href="../index.html#leadership" class="hover:text-white transition-colors">Governance</a>
-        <a href="../index.html#estimator" class="hover:text-white transition-colors">Contact</a>
+        <a href="index.html" class="hover:text-white transition-colors">Case Studies</a>
+        <a href="../terms.html" class="hover:text-white transition-colors">Terms</a>
+        <a href="../privacy.html" class="hover:text-white transition-colors">Privacy</a>
+        <a href="../contact.html" class="hover:text-white transition-colors">Contact</a>
       </div>
     </div>
   </footer>

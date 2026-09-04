@@ -7,6 +7,7 @@
   <title>ASHNEL INC. — Digital Product Studio & Enterprise Advisory</title>
   <meta name="description"
     content="ASHNEL INC. is an MSME-registered venture & tech product studio established in 2016. Fixed-scope turnkey software engineering for religious bodies, communities, non-profits, and enterprises.">
+  <link rel="icon" type="image/png" href="assets/Logo@s.png">
 
   <!-- Fonts: Inter, Plus Jakarta Sans, JetBrains Mono + Cormorant Garamond & Newsreader -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -171,6 +172,7 @@
         <a href="#leadership" class="hover:text-obsidian-950 transition-colors">Leadership & Governance</a>
         <a href="case-studies/index.html"
           class="hover:text-obsidian-950 text-amber-700 font-semibold transition-colors">Case Studies</a>
+        <a href="contact.html" class="hover:text-obsidian-950 transition-colors">Contact</a>
       </nav>
 
       <!-- CTA Action -->
@@ -207,6 +209,7 @@
         <a href="#hammer-story" class="mobile-nav-link">The $10K Hammer Parable</a>
         <a href="#thought-leadership" class="mobile-nav-link">White Papers & Published Work</a>
         <a href="#leadership" class="mobile-nav-link">Leadership & Advisory Collective</a>
+        <a href="contact.html" class="mobile-nav-link text-amber-700 font-semibold">Contact & Advisory Desk</a>
       </div>
       <div class="pt-2">
         <a href="#estimator" class="w-full btn-primary text-center justify-center">Plan Your Build</a>
@@ -222,7 +225,13 @@
     <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none"></div>
 
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Background Watermark Logo (50% Opacity, partly trimmed on right side) -->
+    <div
+      class="absolute -right-24 sm:-right-32 md:-right-44 lg:-right-48 top-16 sm:top-12 lg:top-1/2 lg:-translate-y-1/2 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[720px] lg:h-[720px] pointer-events-none select-none opacity-50 z-0">
+      <img src="assets/Logo@.png" alt="" class="w-full h-full object-contain">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Top Pill Badge -->
       <div class="flex items-center justify-start mb-6">
@@ -1093,6 +1102,19 @@
                 class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white"></textarea>
             </div>
 
+            <!-- DPDP Act 2023 Statutory Consent -->
+            <div class="pt-1">
+              <label class="flex items-start gap-2.5 text-xs text-slate-600 cursor-pointer select-none">
+                <input type="checkbox" id="estimator-dpdp-consent" required
+                  class="mt-0.5 rounded border-slate-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                <span class="leading-relaxed">
+                  <strong>DPDP Consent:</strong> I voluntarily consent to ASHNEL INC. collecting and processing my submitted details solely for evaluating this project scope, under the
+                  <a href="privacy.html" target="_blank" class="text-amber-700 underline font-semibold">DPDP Privacy Charter</a> and
+                  <a href="terms.html" target="_blank" class="text-amber-700 underline font-semibold">Terms of Engagement</a>.
+                </span>
+              </label>
+            </div>
+
             <div class="flex items-center justify-between pt-4">
               <button type="button" onclick="goToStep(2)" class="btn-secondary">
                 <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1147,8 +1169,9 @@
             Digital product studio and enterprise systems advisory. We deliver complete, fixed-scope turnkey software
             with verified data sanctity and zero agency bloat.
           </p>
-          <div class="font-mono text-xs text-amber-400/90 pt-1">
-            Bangalore Studio • MSME Registered Entity • GSTIN Compliant
+          <div class="font-mono text-xs text-amber-400/90 pt-1 space-y-1">
+            <div>Bangalore Studio • MSME Registered Entity</div>
+            <div class="text-slate-400 text-[11px]">GSTIN: <span class="text-slate-200">29BPUPJ7485N1ZK</span></div>
           </div>
         </div>
 
@@ -1171,17 +1194,14 @@
         <div class="md:col-span-4 space-y-3">
           <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Institutional Policies</div>
           <ul class="space-y-2 text-xs">
-            <li><button onclick="openModal('sow-modal')"
-                class="hover:text-amber-400 transition-colors text-left">Fixed-Scope SOW & IP Guarantee</button></li>
-            <li><button onclick="openModal('privacy-modal')"
-                class="hover:text-amber-400 transition-colors text-left">Privacy & Data Sanctity Charter</button></li>
-            <li><button onclick="openModal('contact-modal')"
-                class="hover:text-amber-400 transition-colors text-left">Contact Advisory Desk</button></li>
+            <li><a href="terms.html" class="hover:text-amber-400 transition-colors">Terms of Engagement & IP</a></li>
+            <li><a href="privacy.html" class="hover:text-amber-400 transition-colors">DPDP Privacy & Data Charter</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact Advisory Desk</a></li>
           </ul>
           <div class="pt-4">
-            <a href="#estimator"
+            <a href="contact.html"
               class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 bg-amber-950/60 border border-amber-800/60 px-3 py-1.5 rounded-lg hover:bg-amber-900/60 transition-colors">
-              <span>Initiate SOW Scope Form</span>
+              <span>Book Architecture Consultation</span>
               <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>
@@ -1194,11 +1214,12 @@
       <!-- Legal & Copyright Line -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          © 2026 ASHNEL INC. All Rights Reserved. MSME Registered Enterprise. GSTIN Compliant.
+          © 2016&ndash;2026 ASHNEL INC. All Rights Reserved. Registered MSME Enterprise.
         </div>
         <div class="flex items-center gap-6">
-          <a href="#" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
-          <a href="#" class="hover:text-slate-400 transition-colors">Ethical Stewardship</a>
+          <a href="terms.html" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
+          <a href="privacy.html" class="hover:text-slate-400 transition-colors">Privacy Charter</a>
+          <a href="contact.html" class="hover:text-amber-400 transition-colors">Contact Us</a>
           <a href="#main-header" class="hover:text-amber-400 transition-colors">Back to top ↑</a>
         </div>
       </div>

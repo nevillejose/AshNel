@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Studio Consultation — ASHNEL INC.</title>
+  <meta name="description"
+    content="Direct contact channels, Bangalore studio coordinates, sprint booking, and advisory desks for ASHNEL INC. Digital product engineering and enterprise advisory.">
+  <link rel="icon" type="image/png" href="assets/Logo@s.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              700: '#334155',
+              800: '#1E293B',
+              850: '#131D31',
+              900: '#0F172A',
+              950: '#080C15',
+            },
+            amber: {
+              50: '#FFF7ED',
+              100: '#FFEDD5',
+              200: '#FED7AA',
+              400: '#F59E0B',
+              500: '#E46824',
+              600: '#D95A1E',
+              700: '#B84411',
+              800: '#93330B',
+              900: '#782706',
+              950: '#451503',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            serif: ['Newsreader', 'Cormorant Garamond', 'Georgia', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Top System Ribbon -->
+  <div class="bg-obsidian-950 text-slate-400 text-xs py-2 px-4 border-b border-obsidian-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+        <span
+          class="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] text-amber-400 bg-amber-950/40 border border-amber-800/40 px-2 py-0.5 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          ADVISORY DESK ONLINE
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">•</span>
+        <span class="hidden sm:inline-block text-slate-400">Direct Principal-Led Architectural Advisory</span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] font-mono">
+        <span class="text-slate-400"><strong class="text-slate-200">Bangalore</strong> Studio</span>
+        <span class="text-slate-600">|</span>
+        <span class="text-amber-400">Turnkey Sprints Available Q4 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="ASHNEL INC." class="h-10 w-auto object-contain">
+        </a>
+        <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-slate-400 border-l border-slate-200 pl-4">
+          <a href="index.html" class="hover:text-slate-700">Home</a>
+          <span>/</span>
+          <span class="text-obsidian-950 font-bold">Contact & Advisory</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="index.html#dual-track" class="hover:text-obsidian-950 transition-colors">Solutions</a>
+        <a href="case-studies/index.html" class="hover:text-obsidian-950 transition-colors">Case Studies</a>
+        <a href="terms.html" class="hover:text-obsidian-950 transition-colors">Terms of Engagement</a>
+        <a href="privacy.html" class="hover:text-obsidian-950 transition-colors">Privacy Charter</a>
+        <a href="contact.html" class="text-obsidian-950 font-semibold">Contact</a>
+        <a href="#inquiry-form"
+          class="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-obsidian-950 text-white hover:bg-obsidian-900 transition-colors text-xs font-semibold">
+          <span>Book Consultation</span>
+          &rarr;
+        </a>
+      </nav>
+
+      <div class="flex md:hidden items-center gap-3">
+        <a href="#inquiry-form"
+          class="px-3 py-1.5 rounded-lg bg-obsidian-950 text-white text-xs font-semibold hover:bg-obsidian-900 transition-colors whitespace-nowrap">
+          Inquire &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Consistent Watermark -->
+  <section
+    class="relative overflow-hidden pt-12 pb-20 lg:pt-16 lg:pb-28 bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-slate-200">
+    <!-- Background Structural Grid Graphic -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+
+    <!-- Background Watermark Logo (50% Opacity, trimmed right and bottom) -->
+    <div
+      class="absolute -right-20 sm:-right-28 md:-right-36 lg:-right-40 -bottom-16 sm:-bottom-24 md:-bottom-32 lg:-bottom-36 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[680px] pointer-events-none select-none opacity-50 z-0">
+      <img src="assets/Logo@.png" alt="" class="w-full h-full object-contain">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-700 tracking-wide mb-6">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <span class="font-mono uppercase text-[11px]">Bangalore Studio • Institutional Access</span>
+        </div>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-obsidian-950 tracking-tight mb-6">
+          Consult the Studio
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+          Direct access to seasoned software architects, product strategists, and turnkey build leads. No business
+          development intermediaries, no junior staffing bait-and-switch.
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-4 text-xs font-mono text-slate-500">
+          <span>Bangalore, Karnataka, India</span>
+          <span>•</span>
+          <span>Advisory: advisory@ashnel.com</span>
+          <span>•</span>
+          <span>Privacy Desk: privacy@ashnel.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Desks & Intake Form -->
+  <section class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+
+        <!-- Left Column: Direct Channels & Studio Information -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase tracking-wider mb-2">Direct Communication</div>
+            <h2 class="font-heading font-bold text-2xl sm:text-3xl text-obsidian-950 tracking-tight mb-4">
+              Institutional Desks
+            </h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              We respond to all technical scoping briefs and corporate inquiries within 24 hours. For statutory privacy
+              and data rights, our dedicated Grievance Officer acknowledges requests within 48 hours.
+            </p>
+          </div>
+
+          <!-- Channel Cards -->
+          <div class="space-y-4">
+            <!-- Advisory Desk -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-colors">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-obsidian-950 text-amber-400 flex items-center justify-center shrink-0 font-mono font-bold text-sm">
+                  @
+                </div>
+                <div class="space-y-1">
+                  <div class="font-mono text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Product & Engineering Advisory</div>
+                  <div class="font-heading font-bold text-base text-obsidian-950">Turnkey Scoping & SOWs</div>
+                  <p class="text-xs text-slate-600 leading-relaxed pt-1">
+                    Send RFP documents, technical specs, or sprint requirements directly to our leadership team.
+                  </p>
+                  <div class="pt-2">
+                    <a href="mailto:advisory@ashnel.com" class="font-mono text-xs font-semibold text-amber-700 hover:text-amber-800 underline">
+                      advisory@ashnel.com &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Privacy & Grievance Desk -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-colors">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-emerald-900 text-emerald-300 flex items-center justify-center shrink-0 font-mono font-bold text-sm">
+                  §
+                </div>
+                <div class="space-y-1">
+                  <div class="font-mono text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Statutory DPDP Desk</div>
+                  <div class="font-heading font-bold text-base text-obsidian-950">Grievance & Data Officer</div>
+                  <p class="text-xs text-slate-600 leading-relaxed pt-1">
+                    Exercise DPDP Act 2023 rights (access, erasure, nomination) or withdraw processing consent.
+                  </p>
+                  <div class="pt-2">
+                    <a href="mailto:privacy@ashnel.com" class="font-mono text-xs font-semibold text-amber-700 hover:text-amber-800 underline">
+                      privacy@ashnel.com &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Studio Location -->
+            <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-slate-300 transition-colors">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-slate-200 text-slate-700 flex items-center justify-center shrink-0 font-mono font-bold text-sm">
+                  HQ
+                </div>
+                <div class="space-y-1">
+                  <div class="font-mono text-[11px] font-semibold text-slate-500 uppercase tracking-wider">Engineering Base</div>
+                  <div class="font-heading font-bold text-base text-obsidian-950">Bangalore Studio</div>
+                  <p class="text-xs text-slate-600 leading-relaxed pt-1">
+                    ASHNEL INC.<br>
+                    Bangalore, Karnataka 560001<br>
+                    Registered MSME Enterprise • GSTIN: 29BPUPJ7485N1ZK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Engagement Guarantee Callout -->
+          <div class="p-5 rounded-xl bg-amber-50/70 border border-amber-200 text-xs text-slate-700 space-y-2">
+            <div class="font-heading font-bold text-obsidian-950 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Mutual NDA on Intake
+            </div>
+            <p class="leading-relaxed">
+              All proprietary business concepts, architectural schematics, and commercial parameters shared through our
+              intake channels are treated under strict institutional confidentiality from first contact.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Intake Inquiry Form with DPDP Checkbox -->
+        <div class="lg:col-span-7" id="inquiry-form">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-xl shadow-slate-100/50 p-6 sm:p-10">
+            <div class="mb-8">
+              <div class="font-mono text-xs font-bold text-amber-700 uppercase tracking-wider mb-1">Sprint Reservation</div>
+              <h3 class="font-heading font-bold text-2xl text-obsidian-950">
+                Submit Architectural Brief
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                Share your build targets. We will evaluate technical feasibility and return a preliminary scope blueprint.
+              </p>
+            </div>
+
+            <form id="contact-form" class="space-y-5" onsubmit="handleContactSubmit(event)">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-name" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Your Full Name <span class="text-amber-600">*</span>
+                  </label>
+                  <input type="text" id="contact-name" required placeholder="e.g. Rahul Sharma"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors">
+                </div>
+
+                <div>
+                  <label for="contact-email" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Corporate / Work Email <span class="text-amber-600">*</span>
+                  </label>
+                  <input type="email" id="contact-email" required placeholder="name@company.com"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-org" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Company / Entity Name <span class="text-amber-600">*</span>
+                  </label>
+                  <input type="text" id="contact-org" required placeholder="e.g. Acme Health Technologies"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors">
+                </div>
+
+                <div>
+                  <label for="contact-phone" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Phone / WhatsApp <span class="text-slate-400 font-normal">(Optional)</span>
+                  </label>
+                  <input type="tel" id="contact-phone" placeholder="+91 98765 43210"
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contact-practice" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Engagement Practice <span class="text-amber-600">*</span>
+                  </label>
+                  <select id="contact-practice" required
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors bg-white">
+                    <option value="turnkey">Turnkey Full-Stack Product (Track A)</option>
+                    <option value="advisory">Enterprise Advisory & Modernization (Track B)</option>
+                    <option value="matrimony">Matrimony / Community Platform</option>
+                    <option value="ai">AI / LLM Production Pipeline</option>
+                    <option value="audit">Architecture & Security Audit</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="contact-budget" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                    Target Budget Window <span class="text-amber-600">*</span>
+                  </label>
+                  <select id="contact-budget" required
+                    class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors bg-white">
+                    <option value="tier0">₹1,00,000 &ndash; ₹5,00,000 (Sprint Audit / Focused Build)</option>
+                    <option value="tier1">₹5,00,000 &ndash; ₹10,00,000 (Scoping / Prototype)</option>
+                    <option value="tier2" selected>₹10,00,000 &ndash; ₹25,00,000 (Complete Turnkey MVP)</option>
+                    <option value="tier3">₹25,00,000 &ndash; ₹50,00,000 (Enterprise Track)</option>
+                    <option value="tier4">₹50,00,000+ (Multi-Phase Program)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block font-mono text-xs font-semibold text-slate-700 mb-1.5">
+                  Brief Project Requirements & Goals <span class="text-amber-600">*</span>
+                </label>
+                <textarea id="contact-message" rows="4" required
+                  placeholder="Describe your current stage, key technical constraints, target launch date, and desired outcome..."
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-600 transition-colors"></textarea>
+              </div>
+
+              <!-- DPDP Mandatory Consent Checkbox -->
+              <div class="pt-2">
+                <label class="flex items-start gap-3 text-xs text-slate-600 cursor-pointer select-none">
+                  <input type="checkbox" id="contact-dpdp-consent" required
+                    class="mt-0.5 rounded border-slate-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
+                  <span class="leading-relaxed">
+                    <strong>DPDP Consent:</strong> I voluntarily consent to ASHNEL INC. collecting and processing my
+                    submitted details solely for evaluating and responding to this project inquiry, in accordance with the
+                    <a href="privacy.html" target="_blank" class="text-amber-700 underline font-semibold">DPDP Privacy Charter</a> and
+                    <a href="terms.html" target="_blank" class="text-amber-700 underline font-semibold">Terms of Engagement</a>.
+                    I understand I may withdraw consent at any time via <span class="font-mono text-slate-700">privacy@ashnel.com</span>.
+                  </span>
+                </label>
+              </div>
+
+              <div class="pt-3">
+                <button type="submit" id="submit-btn"
+                  class="w-full py-3.5 px-6 rounded-xl bg-obsidian-950 text-white font-semibold text-sm hover:bg-obsidian-900 transition-all flex items-center justify-center gap-2 shadow-lg shadow-obsidian-950/20">
+                  <span>Submit Inquiry to Studio Lead</span>
+                  &rarr;
+                </button>
+              </div>
+
+              <!-- Feedback message container -->
+              <div id="form-feedback" class="hidden rounded-xl p-4 text-xs leading-relaxed"></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian-950 text-slate-400 border-t border-obsidian-800 pt-16 pb-12 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-obsidian-800">
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-white.png" alt="ASHNEL INC." class="h-10 sm:h-11 w-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Digital product studio and enterprise systems advisory. Fixed-scope turnkey software with verified data sanctity and zero agency bloat.
+          </p>
+          <div class="font-mono text-xs text-amber-400/90 pt-1 space-y-1">
+            <div>Bangalore Studio • MSME Registered Entity</div>
+            <div class="text-slate-400 text-[11px]">GSTIN: <span class="text-slate-200">29BPUPJ7485N1ZK</span></div>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Practices & Portfolios</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html#dual-track" class="hover:text-amber-400 transition-colors">Turnkey MVP Engineering</a></li>
+            <li><a href="case-studies/index.html" class="hover:text-amber-400 transition-colors">Case Studies & Blueprints</a></li>
+            <li><a href="case-studies/matrimony-dating.html" class="hover:text-amber-400 transition-colors">Matrimony Ecosystem</a></li>
+            <li><a href="index.html#leadership" class="hover:text-amber-400 transition-colors">Leadership & Governance</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Institutional Policies</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="terms.html" class="hover:text-amber-400 transition-colors">Terms of Engagement & IP</a></li>
+            <li><a href="privacy.html" class="hover:text-amber-400 transition-colors">DPDP Privacy & Data Charter</a></li>
+            <li><a href="contact.html" class="text-amber-400 font-semibold">Contact Advisory Desk</a></li>
+          </ul>
+          <div class="pt-4">
+            <a href="#inquiry-form"
+              class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 bg-amber-950/60 border border-amber-800/60 px-3 py-1.5 rounded-lg hover:bg-amber-900/60 transition-colors">
+              <span>Book Architecture Consultation</span>
+              &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2016&ndash;2026 ASHNEL INC. All Rights Reserved. Registered MSME Enterprise.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="terms.html" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
+          <a href="privacy.html" class="hover:text-slate-400 transition-colors">Privacy Charter</a>
+          <a href="contact.html" class="text-slate-400">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const org = document.getElementById('contact-org').value;
+      const practice = document.getElementById('contact-practice').value;
+      const budgetSelect = document.getElementById('contact-budget');
+      const budget = budgetSelect.options[budgetSelect.selectedIndex].text;
+      const message = document.getElementById('contact-message').value;
+
+      const subject = encodeURIComponent(`[Studio Brief] ${org} — ${practice}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${org}\n` +
+        `Practice: ${practice}\n` +
+        `Budget Window: ${budget}\n\n` +
+        `Scope Summary:\n${message}\n\n` +
+        `[DPDP Consent confirmed on ${new Date().toISOString()}]`
+      );
+
+      feedback.className = 'rounded-xl p-4 text-xs leading-relaxed bg-emerald-50 border border-emerald-200 text-emerald-900 space-y-2';
+      feedback.innerHTML = `
+        <div class="font-bold flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          Brief Received & Ready for Studio Dispatch
+        </div>
+        <p>Thank you, ${name}. Your architectural brief has been recorded under our DPDP compliance registry.</p>
+        <p>To dispatch directly from your email client now: <a href="mailto:advisory@ashnel.com?subject=${subject}&body=${body}" class="font-bold underline text-emerald-800">Launch Email Client &rarr;</a></p>
+      `;
+      feedback.classList.remove('hidden');
+    }
+  </script>
+
+</body>
+
+</html>
