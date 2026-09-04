@@ -1,0 +1,19 @@
+{
+  "name": "ashnel.com",
+  "version": "1.0.0",
+  "description": "ASHNEL INC. — Digital Product Studio & Turnkey Enterprise Architectures",
+  "private": true,
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000",
+    "serve": "npx serve -l 8000 ."
+  },
+  "keywords": [
+    "ashnel",
+    "enterprise-architecture",
+    "sovereign-software",
+    "turnkey-systems"
+  ],
+  "author": "ASHNEL INC.",
+  "license": "UNLICENSED"
+}

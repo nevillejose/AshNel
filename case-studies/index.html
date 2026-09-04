@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies & Architecture Portfolios — ASHNEL INC.</title>
+  <meta name="description"
+    content="Authoritative case studies, architectural blueprints, and production platform deep-dives engineered by ASHNEL INC. for religious bodies, communities, non-profits, and enterprises.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              900: '#0F172A',
+              950: '#020617',
+            },
+            amber: {
+              400: '#F59E0B',
+              500: '#D95A1E',
+              600: '#B94412',
+              700: '#8A320C',
+            }
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            serif: ['Newsreader', 'Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-white text-slate-800 font-body antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Top Institutional Ribbon -->
+  <div class="bg-obsidian-950 text-slate-300 border-b border-obsidian-900 text-xs py-2 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-3">
+        <span
+          class="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] text-amber-400 font-semibold tracking-wider uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Production Systems Portfolio
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline text-[11px] text-slate-400">Verifiable Architectures for Religious Orgs,
+          Communities & Non-Profits</span>
+      </div>
+      <div class="flex items-center gap-4 text-[10px] sm:text-[11px] font-mono flex-shrink-0">
+        <a href="../index.html" class="text-slate-400 hover:text-white transition-colors">
+          <span class="hidden sm:inline">&larr; Return to Main Site</span>
+          <span class="sm:hidden">&larr; Main Site</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../assets/logo.png" alt="ASHNEL INC." class="h-10 sm:h-11 w-auto object-contain">
+        <div class="hidden sm:flex flex-col border-l border-slate-200 pl-3 py-0.5">
+          <span class="text-[11px] text-slate-500 font-medium">Business Solutions</span>
+          <span class="font-mono text-[9px] text-amber-700 font-semibold tracking-wider uppercase">Case Studies &
+            Blueprints</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="../index.html#dual-track" class="hover:text-obsidian-950 transition-colors">Solutions</a>
+        <a href="../index.html#assets" class="hover:text-obsidian-950 transition-colors">Capabilities</a>
+        <a href="index.html" class="text-amber-700 font-bold">Case Studies</a>
+        <a href="../index.html#estimator"
+          class="inline-flex items-center gap-1 px-4 py-2 rounded-lg bg-obsidian-950 text-white hover:bg-obsidian-900 transition-colors text-xs font-semibold">
+          <span>Consult Studio</span>
+          &rarr;
+        </a>
+      </nav>
+
+      <!-- Mobile CTA -->
+      <div class="flex md:hidden items-center gap-3">
+        <a href="../index.html#estimator"
+          class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-obsidian-950 text-white hover:bg-obsidian-900 transition-colors text-xs font-semibold">
+          <span>Consult</span>
+          &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-24 bg-gradient-to-b from-slate-50 via-white to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-mono font-semibold text-amber-800 uppercase tracking-widest mb-4">
+          Architectural Blueprints & Case Studies
+        </div>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-obsidian-950 tracking-tight mb-6">
+          Corroborated Systems.
+        </h1>
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-obsidian-950 tracking-tight mb-6">
+          Proven to Scale.
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+          Explore in-depth technical breakdowns of our turnkey platforms engineered for institutions,
+          community organizations, non-profits, and commercial operations. Every platform operates on zero commercial
+          data exploitation, sovereign hosting enclaves, and long-term architectural stability.
+        </p>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-200/80">
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+          <div class="text-xs font-mono text-slate-400 uppercase font-semibold">Live Production Platforms</div>
+          <div class="font-heading font-extrabold text-3xl text-obsidian-950 mt-1">8 Systems</div>
+          <div class="text-[11px] text-slate-500 mt-1">Full IP handover & turnkey ops</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+          <div class="text-xs font-mono text-slate-400 uppercase font-semibold">Data Sanctity Standard</div>
+          <div class="font-heading font-extrabold text-3xl text-emerald-700 mt-1">100% Zero Ads</div>
+          <div class="text-[11px] text-slate-500 mt-1">Zero third-party trackers</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+          <div class="text-xs font-mono text-slate-400 uppercase font-semibold">Average Lifespan Target</div>
+          <div class="font-heading font-extrabold text-3xl text-obsidian-950 mt-1">10+ Years</div>
+          <div class="text-[11px] text-slate-500 mt-1">Built to minimize maintenance</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs">
+          <div class="text-xs font-mono text-slate-400 uppercase font-semibold">Engineering Philosophy</div>
+          <div class="font-heading font-extrabold text-3xl text-amber-600 mt-1">Lean Core</div>
+          <div class="text-[11px] text-slate-500 mt-1">No hype frameworks or churn</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All 8 Case Studies Grid -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Case Studies Header -->
+      <div class="max-w-3xl mb-8">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-mono font-semibold text-amber-800 uppercase tracking-widest mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          Independent Ecosystems
+        </div>
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-obsidian-950">
+          Specialized Production Case Studies
+        </h2>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+          Detailed technical blueprints and outcomes across sovereign domains. Select an ecosystem below to filter and
+          inspect specialized architectures.
+        </p>
+      </div>
+
+      <!-- Filter Controls (Driving the Systems Grid Below) -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 pb-5 border-b border-slate-200/80 gap-4">
+        <div
+          class="flex flex-wrap items-center gap-1.5 p-1 bg-slate-200/80 rounded-xl border border-slate-300/80 font-mono text-[11px] max-w-full"
+          id="multiverse-filter-bar">
+          <button type="button" data-filter="all"
+            class="filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg whitespace-nowrap font-semibold transition-all bg-obsidian-950 text-white shadow-xs">
+            All
+          </button>
+          <button type="button" data-filter="social"
+            class="filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg whitespace-nowrap font-medium text-slate-700 hover:text-obsidian-950 hover:bg-white/80 transition-all">
+            Social & Governance
+          </button>
+          <button type="button" data-filter="media"
+            class="filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg whitespace-nowrap font-medium text-slate-700 hover:text-obsidian-950 hover:bg-white/80 transition-all">
+            Media & Broadcast
+          </button>
+          <button type="button" data-filter="knowledge"
+            class="filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg whitespace-nowrap font-medium text-slate-700 hover:text-obsidian-950 hover:bg-white/80 transition-all">
+            Knowledge & LMS
+          </button>
+          <button type="button" data-filter="operations"
+            class="filter-btn px-2.5 sm:px-3 py-1.5 rounded-lg whitespace-nowrap font-medium text-slate-700 hover:text-obsidian-950 hover:bg-white/80 transition-all">
+            Commerce & Events
+          </button>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-mono text-slate-500 flex-shrink-0">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          <span>8 Production Use Cases</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch" id="case-studies-container">
+
+        <!-- 01. Matrimony & Dating Ecosystem -->
+        <div data-category="social"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-red-300 hover:shadow-xl hover:shadow-red-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-red-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 01</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Matrimony & Dating Ecosystem
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              High-trust community matchmaking platform with multi-tier membership & institutional credential
+              verification, tokenized messaging proxies, and strict privacy. Engineered to eliminate fraudulent
+              accounts, commercial data tracking, and unsolicited contacts.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span
+                  class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Architecture</span>
+                <span class="font-bold text-slate-900">Django • Python • PostgreSQL</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Trust
+                  Engine</span>
+                <span class="font-bold text-red-700">Multi-Tier Record Vetting</span>
+              </div>
+            </div>
+          </div>
+          <a href="matrimony-dating.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 02. Media Management Platform -->
+        <div data-category="media"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-yellow-400 hover:shadow-xl hover:shadow-yellow-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-yellow-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 02</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Media Management Platform</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              Multi-format digital asset management and streaming repository integrating Vimeo OTT, YouTube API, and
+              global podcast syndication feeds. Provides an unbranded, distraction-free playback portal with unified
+              taxonomies.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Video
+                  Pipeline</span>
+                <span class="font-bold text-slate-900">Vimeo OTT & YouTube API</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Audio Feeds</span>
+                <span class="font-bold text-yellow-700">Podcastics Syndication</span>
+              </div>
+            </div>
+          </div>
+          <a href="media-management.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 03. Learning Management System -->
+        <div data-category="knowledge"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 03</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Learning Management System
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              Enterprise Frappe LMS for institutional education, values curricula, student tracking, and automated
+              digital certificate generation. Self-hosted and fully sovereign with zero per-seat SaaS licensing
+              penalties.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">LMS Engine</span>
+                <span class="font-bold text-slate-900">Frappe LMS / Python</span>
+              </div>
+              <div>
+                <span
+                  class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Credentialing</span>
+                <span class="font-bold text-emerald-700">Automated Course Badges</span>
+              </div>
+            </div>
+          </div>
+          <a href="learning-management.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 04. Event Management & Training Portal -->
+        <div data-category="operations"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-indigo-300 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 04</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Event Management & Training
+              Portal</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              End-to-end registration, scheduling, and live training platform featuring native in-browser Zoom Video
+              SDK, automated payment gateway settlement, and attendance-verified certificate generation.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Video SDK</span>
+                <span class="font-bold text-slate-900">Jitsi/Zoom SDK</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Operations</span>
+                <span class="font-bold text-indigo-700">Payment & Certificates</span>
+              </div>
+            </div>
+          </div>
+          <a href="event-management.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 05. Retail & E-Commerce Operations -->
+        <div data-category="operations"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 05</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Retail & E-Commerce Operations
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              ERPNext-powered retail store and supply chain engine with real-time multi-location stock tracking,
+              GST-compliant invoicing, and automated dispatch workflows. Eliminates Shopify platform fees and
+              transaction cuts.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Commerce
+                  Engine</span>
+                <span class="font-bold text-slate-900">ERPNext / Frappe Core</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Compliance</span>
+                <span class="font-bold text-blue-700">GST Invoicing & Inventory</span>
+              </div>
+            </div>
+          </div>
+          <a href="retail-ecommerce.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 06. Digital Broadcast Outreach -->
+        <div data-category="media"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-orange-300 hover:shadow-xl hover:shadow-orange-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-orange-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 06</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Digital Broadcast Outreach
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              High-concurrency digital media broadcast platform engineered for multi-lingual outreach. Features global
+              CDN edge caching (>94% offload ratio) and automated subscriber engagement channels via webhooks.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span
+                  class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Infrastructure</span>
+                <span class="font-bold text-slate-900">Cloudflare Edge Rails</span>
+              </div>
+              <div>
+                <span
+                  class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Distribution</span>
+                <span class="font-bold text-orange-700">Multi-Lingual Synchronized Audio</span>
+              </div>
+            </div>
+          </div>
+          <a href="digital-broadcast.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 07. Literature & Digital Publishing -->
+        <div data-category="knowledge"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-purple-300 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-purple-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 07</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Literature & Digital
+              Publishing</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              Digital publishing repository and responsive web reader for institutional treatises, books, and
+              periodicals. Engineered with offline IndexedDB reading support, full-text search indexing, and
+              zero-telemetry hosting.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Platform</span>
+                <span class="font-bold text-slate-900">Custom Web Reader</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Data
+                  Sanctity</span>
+                <span class="font-bold text-purple-700">Zero-Telemetry Hosting</span>
+              </div>
+            </div>
+          </div>
+          <a href="literature-publishing.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+        <!-- 08. Office & Community Management -->
+        <div data-category="social"
+          class="multiverse-card bg-white rounded-2xl border border-slate-200 p-7 sm:p-8 flex flex-col justify-between hover:border-cyan-300 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group">
+          <div class="flex flex-col flex-grow">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-50 border border-slate-200">
+                <span class="w-2 h-2 rounded-full bg-cyan-600"></span>
+                <span class="font-mono text-xs font-bold text-slate-700 uppercase tracking-wider">Multiverse 08</span>
+              </div>
+              <span
+                class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-slate-100 text-slate-700 border border-slate-200 group-hover:bg-emerald-50 group-hover:text-emerald-800 group-hover:border-emerald-200 transition-colors">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Production Verified
+              </span>
+            </div>
+            <h3 class="font-heading font-bold text-xl sm:text-2xl text-obsidian-950 mb-3">Office & Community Management
+            </h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
+              Unified administration suite powering stakeholder directories, institutional registries, 24/7 automated
+              prayer chain scheduling, moderated intercessory walls, volunteer coordination, and leadership pathways.
+            </p>
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 rounded-xl border border-slate-100 mb-6 font-mono text-xs">
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Operations
+                  Hub</span>
+                <span class="font-bold text-slate-900">24/7 Automated Chains</span>
+              </div>
+              <div>
+                <span class="text-slate-400 uppercase text-[10px] block font-semibold tracking-wider">Real-Time</span>
+                <span class="font-bold text-cyan-700">WebSockets / PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+          <a href="community-management.html"
+            class="w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-obsidian-950 hover:text-white text-xs sm:text-sm font-semibold text-slate-800 transition-all flex items-center justify-center gap-2 mt-auto">
+            <span>Explore Architecture Blueprint</span> &rarr;
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisory Banner -->
+  <section class="py-16 bg-obsidian-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <div class="font-mono text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Fixed-Scope
+          Engineering Consultation</div>
+        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white">Need a sovereign turnkey platform for
+          your organization?</h3>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">
+          Whether you are a religious body, community foundation, non-profit, or commercial enterprise, we deliver
+          battle-tested architectures with 100% IP handover.
+        </p>
+      </div>
+      <a href="../index.html#estimator"
+        class="px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-all flex-shrink-0">
+        Initiate Project Scope &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian-950 border-t border-obsidian-900 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2016&ndash;2026 ASHNEL INC. All rights reserved. Registered MSME Enterprise.</div>
+      <div class="flex items-center gap-6">
+        <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="index.html" class="text-amber-400">Case Studies</a>
+        <a href="../index.html#leadership" class="hover:text-white transition-colors">Governance</a>
+        <a href="../index.html#estimator" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Multiverse Domain Filter Controller -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('#multiverse-filter-bar .filter-btn');
+      const cards = document.querySelectorAll('.multiverse-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Reset all button styles
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-obsidian-950', 'text-white', 'shadow-xs', 'font-semibold');
+            b.classList.add('text-slate-700', 'font-medium');
+          });
+
+          // Highlight selected button
+          btn.classList.add('bg-obsidian-950', 'text-white', 'shadow-xs', 'font-semibold');
+          btn.classList.remove('text-slate-700', 'font-medium');
+
+          // Filter cards with smooth fade
+          cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'flex';
+              requestAnimationFrame(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              });
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(8px)';
+              setTimeout(() => {
+                if (card.style.opacity === '0') {
+                  card.style.display = 'none';
+                }
+              }, 200);
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

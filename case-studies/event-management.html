@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study 04: Event Management & Training Portal — ASHNEL INC.</title>
+  <meta name="description"
+    content="Production case study of an institutional event registration and virtual training portal with native in-browser Zoom Video SDK, payment gateway, and automated certification.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: { 900: '#0F172A', 950: '#020617' },
+            amber: { 400: '#F59E0B', 500: '#D95A1E', 600: '#B94412', 700: '#8A320C' }
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            serif: ['Newsreader', 'Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-white text-slate-800 font-body antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="ASHNEL INC." class="h-10 w-auto object-contain">
+        </a>
+        <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-slate-400 border-l border-slate-200 pl-4">
+          <a href="../index.html" class="hover:text-slate-700">Home</a>
+          <span>/</span>
+          <a href="index.html" class="hover:text-slate-700">Case Studies</a>
+          <span>/</span>
+          <span class="text-obsidian-950 font-bold">Multiverse 04: Event Management & Training</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-obsidian-950 hidden sm:inline">&larr; All Case Studies</a>
+        <a href="../index.html#estimator" class="px-3 py-1.5 rounded-lg bg-obsidian-950 text-white text-xs font-semibold hover:bg-obsidian-900 transition-colors whitespace-nowrap">
+          <span class="hidden sm:inline">Discuss This Architecture</span>
+          <span class="sm:hidden">Consult &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            <span class="font-mono text-xs font-bold text-indigo-700 uppercase tracking-widest">Multiverse 04 • Commerce & Events</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Production Verified
+          </span>
+        </div>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl text-obsidian-950 tracking-tight leading-tight mb-6">
+          Institutional Event Management & Virtual Training Portal
+        </h1>
+        <p class="text-base sm:text-xl text-slate-600 leading-relaxed font-serif">
+          How we engineered an end-to-end registration, live training, and certification platform for institutional counseling cohorts, incorporating a native in-browser Zoom Video SDK integration and automated fee settlement.
+        </p>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-200">
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Live Video Engine</div>
+          <div class="font-heading font-extrabold text-xl text-obsidian-950 mt-1">Zoom Video SDK</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Native in-browser video & audio</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Client Onboarding</div>
+          <div class="font-heading font-extrabold text-xl text-indigo-700 mt-1">Zero Downloads</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">1-click browser entry</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Financial Pipeline</div>
+          <div class="font-heading font-extrabold text-xl text-emerald-700 mt-1">Auto Settlement</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Automated invoice & receipting</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Completion Protocol</div>
+          <div class="font-heading font-extrabold text-xl text-amber-600 mt-1">Attendance Gate</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Verified certificates upon exit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Body -->
+  <section class="py-16 sm:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Challenge -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-4">1. The Institutional Challenge</h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
+          Institutional commissions and community bodies regularly conduct mandatory training cohorts (such as pre-marriage preparation courses, bereavement counseling, and volunteer certifications). Previously, coordinating these programs involved disjointed spreadsheets, standalone video links, and manual verification:
+        </p>
+        <ul class="space-y-3 text-sm text-slate-700 bg-slate-50 p-6 rounded-xl border border-slate-200 font-mono">
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">&bull;</span>
+            <span><strong>Friction for Attendees:</strong> Forcing participants to download external meeting apps, remember passwords, and track separate email links caused high drop-off and technical delays.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">&bull;</span>
+            <span><strong>Attendance Verification Gaps:</strong> Administrators had no automated way to verify that a registered candidate actually attended the full duration required for institutional accreditation.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-indigo-600 font-bold">&bull;</span>
+            <span><strong>Payment & Certificate Disconnect:</strong> Manual reconciliation between bank transfers and paper certificate issuance created weeks of backlog.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Architecture -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-4">2. The Architectural Blueprint</h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-6">
+          ASHNEL INC. engineered a unified web application linking registration, payment processing, live session delivery, and certificate issuance into a single continuous pipeline:
+        </p>
+
+        <div class="bg-obsidian-950 text-slate-200 p-4 sm:p-6 rounded-2xl border border-obsidian-800 font-mono text-xs overflow-x-auto max-w-full">
+          <div class="text-amber-400 font-bold mb-3">// INTEGRATED VIRTUAL TRAINING LIFECYCLE</div>
+          <pre class="leading-relaxed">
+[ Candidate Registration & Document Submission ]
+        │
+        ▼
+[ Payment Gateway Handshake (Stripe / Razorpay) ] ──▶ Instant Receipt & GST Invoice
+        │
+        ▼
+[ Scheduled Cohort Access Window ]
+        │
+        ▼
+[ Native In-Browser Video Chamber (Zoom Video SDK) ]
+  ├── Zero External Zoom Client Required
+  ├── Authenticated Roster Check (No uninvited attendees)
+  └── Granular Attendance Telemetry (Log-in / Log-out minute tracking)
+        │
+        ▼
+[ Post-Session Completion Gate ]
+  ├── Verified Attendance Threshold Validation (>90% required)
+  └── Instant Verifiable PDF Certificate Generation with Cryptographic QR
+          </pre>
+        </div>
+      </div>
+
+      <!-- Technical Pillars -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-6">3. Technical Pillars & Implementation</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 01</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Native In-Browser Zoom Video SDK</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Integrated Zoom Video SDK directly into the web application. Attendees participate in crystal-clear audio and video sessions within the branded institutional portal without installing third-party apps or creating Zoom accounts.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 02</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Automated Attendance Telemetry</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              The platform tracks exact presence timestamps. If a candidate leaves early or experiences network drops, administrators have real-time visibility, ensuring strict adherence to mandatory institutional certification criteria.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 03</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Unified Payment & Compliance</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Registration fees are settled through automated payment gateways with instant digital receipts, automated tax invoices, and direct ledger posting, eliminating manual reconciliation overhead.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 04</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">One-Click Verifiable Credentialing</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Immediately following successful course completion, the candidate receives an official digital certificate. Sponsoring organizations can scan the embedded QR code to verify validity on the institutional portal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Outcomes -->
+      <div class="p-5 sm:p-8 rounded-2xl bg-amber-50 border border-amber-200">
+        <h2 class="font-heading font-bold text-2xl text-amber-950 mb-3">4. Verified Operational Outcomes</h2>
+        <div class="space-y-4 text-sm text-amber-900 leading-relaxed">
+          <p>
+            The portal eliminated 95% of administrative support overhead, achieved near-100% on-time participant joining rates, and enabled the regional commission to run seamless virtual cohorts with flawless institutional integrity.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-amber-200/80 font-mono text-xs">
+            <div>
+              <div class="font-bold text-lg text-amber-950">Zero</div>
+              <div class="text-[11px] text-amber-800">App Downloads Required</div>
+            </div>
+            <div>
+              <div class="font-bold text-lg text-amber-950">95%</div>
+              <div class="text-[11px] text-amber-800">Reduction in Admin Burden</div>
+            </div>
+            <div>
+              <div class="font-bold text-lg text-amber-950">100%</div>
+              <div class="text-[11px] text-amber-800">Verifiable Attendance Accuracy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a href="learning-management.html" class="text-sm font-semibold text-slate-600 hover:text-obsidian-950">&larr; Multiverse 03: Learning Management</a>
+        <a href="retail-ecommerce.html" class="text-sm font-semibold text-amber-700 hover:text-amber-800">Explore Next: Retail & E-Commerce &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-obsidian-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <div class="font-mono text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Turnkey Event & Video Portal</div>
+        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white">Need an in-browser training & video portal?</h3>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">
+          We configure custom Zoom Video SDK instances, registration funnels, automated billing, and attendance-verified certificates.
+        </p>
+      </div>
+      <a href="../index.html#estimator" class="px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-all flex-shrink-0">
+        Request Scope & Estimate &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian-950 border-t border-obsidian-900 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2016&ndash;2026 ASHNEL INC. All rights reserved. Registered MSME Enterprise.</div>
+      <div class="flex items-center gap-6">
+        <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="index.html" class="text-amber-400">Case Studies</a>
+        <a href="../index.html#leadership" class="hover:text-white transition-colors">Governance</a>
+        <a href="../index.html#estimator" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

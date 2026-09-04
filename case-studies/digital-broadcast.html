@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study 06: Digital Broadcast Outreach — ASHNEL INC.</title>
+  <meta name="description"
+    content="Production case study of a high-concurrency multi-lingual digital broadcast platform engineered with Cloudflare CDN edge rails and automated listener engagement.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: { 900: '#0F172A', 950: '#020617' },
+            amber: { 400: '#F59E0B', 500: '#D95A1E', 600: '#B94412', 700: '#8A320C' }
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+            serif: ['Newsreader', 'Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-white text-slate-800 font-body antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="ASHNEL INC." class="h-10 w-auto object-contain">
+        </a>
+        <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-slate-400 border-l border-slate-200 pl-4">
+          <a href="../index.html" class="hover:text-slate-700">Home</a>
+          <span>/</span>
+          <a href="index.html" class="hover:text-slate-700">Case Studies</a>
+          <span>/</span>
+          <span class="text-obsidian-950 font-bold">Multiverse 06: Digital Broadcast</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-obsidian-950 hidden sm:inline">&larr; All Case Studies</a>
+        <a href="../index.html#estimator" class="px-3 py-1.5 rounded-lg bg-obsidian-950 text-white text-xs font-semibold hover:bg-obsidian-900 transition-colors whitespace-nowrap">
+          <span class="hidden sm:inline">Discuss This Architecture</span>
+          <span class="sm:hidden">Consult &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
+            <span class="font-mono text-xs font-bold text-orange-700 uppercase tracking-widest">Multiverse 06 • Media & Broadcast</span>
+          </div>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            Production Verified
+          </span>
+        </div>
+        <h1 class="font-heading font-extrabold text-3xl sm:text-5xl text-obsidian-950 tracking-tight leading-tight mb-6">
+          High-Concurrency Multi-Lingual Broadcast Outreach
+        </h1>
+        <p class="text-base sm:text-xl text-slate-600 leading-relaxed font-serif">
+          How we architected a resilient, low-latency digital broadcasting engine supporting regional languages, global CDN edge caching, and real-time subscriber engagement without costly streaming infrastructure bloat.
+        </p>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-200">
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Distribution Rail</div>
+          <div class="font-heading font-extrabold text-xl text-obsidian-950 mt-1">Cloudflare Edge</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">300+ Global Point-of-Presence</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Language Pipelines</div>
+          <div class="font-heading font-extrabold text-xl text-orange-700 mt-1">Multi-Lingual</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Simultaneous regional audio tracks</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Edge Cache Hit Ratio</div>
+          <div class="font-heading font-extrabold text-xl text-emerald-700 mt-1">94.6%</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Massive origin server offload</div>
+        </div>
+        <div class="bg-white p-5 rounded-xl border border-slate-200">
+          <div class="text-[11px] font-mono text-slate-400 uppercase font-semibold">Data Telemetry</div>
+          <div class="font-heading font-extrabold text-xl text-obsidian-950 mt-1">Zero Tracker</div>
+          <div class="text-[11px] text-slate-500 mt-0.5">Privacy-first aggregate analytics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep Dive Body -->
+  <section class="py-16 sm:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- Challenge -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-4">1. The Operational Challenge</h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
+          Religious organizations, international NGOs, and community broadcasting networks frequently experience massive traffic spikes during scheduled broadcast events, seasonal celebrations, and global conventions. Relying on default servers produces severe failure modes:
+        </p>
+        <ul class="space-y-3 text-sm text-slate-700 bg-slate-50 p-6 rounded-xl border border-slate-200 font-mono">
+          <li class="flex items-start gap-2">
+            <span class="text-orange-600 font-bold">&bull;</span>
+            <span><strong>Origin Server Crashes:</strong> Simultaneous spikes of tens of thousands of concurrent audio/video requests overwhelm standard virtual machines.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-600 font-bold">&bull;</span>
+            <span><strong>High Latency & Buffer Stalls:</strong> Remote listeners on mobile devices suffer audio buffering and high packet loss on mobile networks.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-orange-600 font-bold">&bull;</span>
+            <span><strong>Multi-Language Complexity:</strong> Managing distinct language streams (e.g. English, regional Indian languages, Spanish) traditionally required duplicate, expensive streaming infrastructure.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Architecture -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-4">2. The Architectural Blueprint</h2>
+        <p class="text-slate-600 leading-relaxed text-sm sm:text-base mb-6">
+          ASHNEL INC. engineered an edge-first broadcast architecture. Origin servers remain insulated behind Cloudflare’s global caching fabric, while audio streams and static metadata are cached within milliseconds of global listeners:
+        </p>
+
+        <div class="bg-obsidian-950 text-slate-200 p-4 sm:p-6 rounded-2xl border border-obsidian-800 font-mono text-xs overflow-x-auto max-w-full">
+          <div class="text-amber-400 font-bold mb-3">// EDGE-CACHED BROADCAST ARCHITECTURE</div>
+          <pre class="leading-relaxed">
+[ Master Broadcast Ingest (Live RTMP / Scheduled Audio) ]
+        │
+        ├── Multi-Language Encoder (Transcoding to AAC / Opus audio chunks)
+        │
+        ▼
+[ Origin Storage Enclave (S3-Compatible Object Store) ]
+        │
+        ▼
+[ Cloudflare Global CDN Edge (300+ Edge Nodes) ]
+  ├── Static Segment Caching (HLS .ts / .m4s fragments)
+  ├── Tiered Cache Sharding (Reduces origin hits by >94%)
+  └── Dynamic Bandwidth Throttling for 3G/4G Mobile Listeners
+        │
+        ▼
+[ Responsive In-Browser Listener Web App ]
+  ├── Language Switcher (Instant track toggle without audio pause)
+  ├── Automated Timezone Scheduling & Live Notification Webhook
+  └── Zero Tracker Telemetry
+          </pre>
+        </div>
+      </div>
+
+      <!-- Technical Pillars -->
+      <div>
+        <h2 class="font-heading font-bold text-2xl text-obsidian-950 mb-6">3. Technical Pillars & Implementation</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 01</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Global CDN Edge Tiering</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Configured custom Cloudflare Cache Rules and tiered routing so that media segments are cached at regional edge points nearest to the listener, reducing origin server load by over 94%.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 02</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Multi-Lingual Synchronized Audio</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Engineered a custom web player that can switch between multiple synchronous language tracks in real-time, allowing listeners across linguistic backgrounds to follow the same live discourse seamlessly.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 03</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Lightweight Mobile Web Delivery</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Designed specifically for emerging markets with intermittent network quality. The custom audio client pre-buffers tiny lightweight chunks, ensuring smooth playback even during signal fluctuations.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-mono text-xs font-bold text-amber-700 uppercase mb-2">Pillar 04</div>
+            <h3 class="font-heading font-bold text-base text-obsidian-950 mb-2">Automated Subscriber Webhooks</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              When a new broadcast goes live, automated webhooks notify opt-in community subscribers via SMS, WhatsApp, and progressive web app (PWA) push notifications without third-party email spam services.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Outcomes -->
+      <div class="p-5 sm:p-8 rounded-2xl bg-amber-50 border border-amber-200">
+        <h2 class="font-heading font-bold text-2xl text-amber-950 mb-3">4. Verified Operational Outcomes</h2>
+        <div class="space-y-4 text-sm text-amber-900 leading-relaxed">
+          <p>
+            The broadcast platform handled tens of thousands of concurrent listeners during major institutional events with zero downtime, negligible bandwidth billing spikes, and glowing feedback from international and regional audiences.
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-amber-200/80 font-mono text-xs">
+            <div>
+              <div class="font-bold text-lg text-amber-950">99.99%</div>
+              <div class="text-[11px] text-amber-800">Broadcast Uptime Reliability</div>
+            </div>
+            <div>
+              <div class="font-bold text-lg text-amber-950">94.6%</div>
+              <div class="text-[11px] text-amber-800">Edge Cache Offload Ratio</div>
+            </div>
+            <div>
+              <div class="font-bold text-lg text-amber-950">&lt; 150ms</div>
+              <div class="text-[11px] text-amber-800">Average Edge Delivery Latency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a href="retail-ecommerce.html" class="text-sm font-semibold text-slate-600 hover:text-obsidian-950">&larr; Multiverse 05: Retail Operations</a>
+        <a href="literature-publishing.html" class="text-sm font-semibold text-amber-700 hover:text-amber-800">Explore Next: Literature & Publishing &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-obsidian-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <div class="font-mono text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Turnkey Broadcast Infrastructure</div>
+        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white">Need a high-concurrency broadcast network?</h3>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">
+          We design resilient edge delivery rails, multi-lingual audio engines, and privacy-first subscriber engagement platforms.
+        </p>
+      </div>
+      <a href="../index.html#estimator" class="px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-all flex-shrink-0">
+        Request Scope & Estimate &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-obsidian-950 border-t border-obsidian-900 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>&copy; 2016&ndash;2026 ASHNEL INC. All rights reserved. Registered MSME Enterprise.</div>
+      <div class="flex items-center gap-6">
+        <a href="../index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="index.html" class="text-amber-400">Case Studies</a>
+        <a href="../index.html#leadership" class="hover:text-white transition-colors">Governance</a>
+        <a href="../index.html#estimator" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

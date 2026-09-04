@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASHNEL INC. — Digital Product Studio & Enterprise Advisory</title>
+  <meta name="description"
+    content="ASHNEL INC. is an MSME-registered venture & tech product studio established in 2016. Fixed-scope turnkey software engineering for religious bodies, communities, non-profits, and enterprises.">
+
+  <!-- Fonts: Inter, Plus Jakarta Sans, JetBrains Mono + Cormorant Garamond & Newsreader -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with Custom Theme Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              700: '#334155',
+              800: '#1E293B',
+              850: '#131D31',
+              900: '#0F172A',
+              950: '#080C15',
+            },
+            amber: {
+              50: '#FFF7ED',
+              100: '#FFEDD5',
+              200: '#FED7AA',
+              300: '#FDBA74',
+              400: '#FB923C',
+              500: '#E46824',
+              600: '#D95A1E',
+              700: '#B84411',
+              800: '#93330B',
+              900: '#782706',
+              950: '#451503',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            serif: ['Newsreader', 'Cormorant Garamond', 'Georgia', 'serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-canvas text-slate-900 font-sans antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- Top System Bar -->
+  <div class="bg-obsidian-950 text-slate-400 text-xs py-2 px-4 border-b border-obsidian-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+      <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+        <span
+          class="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] text-amber-400 bg-amber-950/40 border border-amber-800/40 px-2 py-0.5 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          MSME & GST COMPLIANT ENTITY
+        </span>
+        <span class="hidden sm:inline-block text-slate-500">•</span>
+        <span class="hidden sm:inline-block text-slate-400">Institutional Governance & Fixed-Scope Engineering</span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4 text-[10px] sm:text-[11px] font-mono">
+        <span class="text-slate-400"><strong class="text-slate-200">Bangalore</strong> Studio</span>
+        <span class="text-slate-600">|</span>
+        <a href="#estimator" class="text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1">
+          <span>Q1/Q2 2026 Sprint Openings</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header id="main-header"
+    class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+      <!-- Brand Mark -->
+      <a href="#" class="group flex items-center gap-3.5 focus:outline-none">
+        <img src="assets/logo.png" alt="ASHNEL INC."
+          class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-[1.02]">
+        <div class="hidden sm:flex flex-col border-l border-slate-200 pl-3 py-0.5">
+          <span class="text-[11px] text-slate-500 font-medium tracking-tight">Business Solutions</span>
+          <span class="font-mono text-[9px] text-amber-700 font-semibold tracking-wider uppercase">Est. 2016</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-obsidian-950 py-2 focus:outline-none" aria-expanded="false">
+            <span>Solutions</span>
+            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7 7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 top-full pt-2 w-72 opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-150">
+            <div class="bg-white rounded-xl shadow-xl border border-slate-200 p-2 space-y-1">
+              <a href="#dual-track" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                <div
+                  class="w-7 h-7 rounded bg-amber-50 text-amber-700 flex items-center justify-center text-xs font-mono font-bold mt-0.5">
+                  01</div>
+                <div>
+                  <div class="font-semibold text-slate-900 text-xs">Fixed-Scope Products</div>
+                  <div class="text-[11px] text-slate-500">Turnkey startup MVPs, Stripe setup & code ownership</div>
+                </div>
+              </a>
+              <a href="#dual-track" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                <div
+                  class="w-7 h-7 rounded bg-indigo-50 text-indigo-700 flex items-center justify-center text-xs font-mono font-bold mt-0.5">
+                  02</div>
+                <div>
+                  <div class="font-semibold text-slate-900 text-xs">Religious & Community Tech</div>
+                  <div class="text-[11px] text-slate-500">Institutional portals & verified community software</div>
+                </div>
+              </a>
+              <a href="#dual-track" class="flex items-start gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                <div
+                  class="w-7 h-7 rounded bg-slate-100 text-slate-700 flex items-center justify-center text-xs font-mono font-bold mt-0.5">
+                  03</div>
+                <div>
+                  <div class="font-semibold text-slate-900 text-xs">Advisory & Compliance</div>
+                  <div class="text-[11px] text-slate-500">MSME, GST & enterprise architecture guidance</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="flex items-center gap-1 hover:text-obsidian-950 py-2 focus:outline-none">
+            <span>The Philosophy</span>
+            <svg class="w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7 7" />
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 top-full pt-2 w-64 opacity-0 translate-y-1 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-150">
+            <div class="bg-white rounded-xl shadow-xl border border-slate-200 p-2 space-y-1">
+              <a href="#hammer-story" class="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                <div class="font-semibold text-slate-900 text-xs">"Knowing Where to Hit"</div>
+                <div class="text-[11px] text-slate-500">The $10k Hammer Parable vs Modern AI</div>
+              </a>
+              <a href="#thought-leadership" class="block p-2.5 rounded-lg hover:bg-slate-50 transition-colors">
+                <div class="font-semibold text-slate-900 text-xs">White Papers & Published Books</div>
+                <div class="text-[11px] text-slate-500">The Vibe Coding Hangover & Platform Governance</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#leadership" class="hover:text-obsidian-950 transition-colors">Leadership & Governance</a>
+        <a href="case-studies/index.html"
+          class="hover:text-obsidian-950 text-amber-700 font-semibold transition-colors">Case Studies</a>
+      </nav>
+
+      <!-- CTA Action -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#estimator" class="btn-primary inline-flex items-center gap-2">
+          <span>Plan Your Build</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden flex items-center">
+        <button id="mobile-menu-toggle" type="button"
+          class="p-2.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none"
+          aria-label="Toggle navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu"
+      class="hidden lg:hidden border-t border-slate-200 bg-white/95 backdrop-blur-lg px-4 pt-3 pb-6 space-y-3">
+      <div class="space-y-1">
+        <a href="#dual-track" class="mobile-nav-link">Fixed-Scope Solutions</a>
+        <a href="#dual-track" class="mobile-nav-link">Religious & Community Tech</a>
+        <a href="case-studies/index.html" class="mobile-nav-link font-semibold text-amber-700">Case Studies &
+          Blueprints</a>
+        <a href="#hammer-story" class="mobile-nav-link">The $10K Hammer Parable</a>
+        <a href="#thought-leadership" class="mobile-nav-link">White Papers & Published Work</a>
+        <a href="#leadership" class="mobile-nav-link">Leadership & Advisory Collective</a>
+      </div>
+      <div class="pt-2">
+        <a href="#estimator" class="w-full btn-primary text-center justify-center">Plan Your Build</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH INTEGRATED 4 ARCHITECTURAL PILLARS -->
+  <section
+    class="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-slate-200">
+
+    <!-- Background Structural Grid Graphic -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Top Pill Badge -->
+      <div class="flex items-center justify-start mb-6">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-slate-200 shadow-sm text-xs font-semibold text-slate-700 tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+          <span>TECH PRODUCT STUDIO</span>
+        </div>
+      </div>
+
+      <!-- Main Hero Top (Copy & Primary CTAs) -->
+      <div class="w-full">
+        <!-- 80% Width Hero Headline with Typewriter Animation & Equal Balanced Spacing -->
+        <h1
+          class="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-[3.85rem] xl:text-[4.25rem] tracking-tight text-obsidian-950 mb-8 w-full lg:w-[75%] xl:w-[80%] flex flex-col gap-4 sm:gap-6">
+          <span class="block leading-none">Enterprise-Grade Solutions,</span>
+          <span
+            class="block font-serif italic font-normal text-amber-600 leading-none min-h-[1.15em] flex items-center flex-wrap">
+            <span id="typewriter-text">Architected for Longevity,</span><span id="typewriter-cursor"
+              class="typewriter-cursor"></span>
+          </span>
+          <span class="block leading-none">Delivered as Turnkey Products.</span>
+        </h1>
+
+        <!-- Full-Width Paragraph -->
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed w-full mb-8">
+          We engineer complete tech solutions, community platforms, and compliance-ready systems for early-stage
+          ventures and mission-driven institutions. No hourly billing traps. No agency overhead. Just fixed-scope
+          execution backed by <span
+            class="font-semibold text-obsidian-950 underline decoration-amber-500 decoration-2 underline-offset-4">
+            decades of experience building and scaling digital products</span>.
+        </p>
+
+        <!-- Dual CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
+          <a href="#dual-track" class="btn-primary text-center justify-center">
+            <span>Explore Fixed-Price Solutions</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <a href="#faith-tech" class="btn-secondary text-center justify-center">
+            <span>Packaged Solutions</span>
+            <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Quick Metrics Bar -->
+        <div class="grid grid-cols-3 gap-6 max-w-lg pb-6 border-b border-slate-200/80">
+          <div>
+            <div class="font-heading font-extrabold text-2xl text-obsidian-950">2016</div>
+            <div class="text-xs text-slate-500 font-medium">Est. Bangalore Studio</div>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-2xl text-amber-600">100%</div>
+            <div class="text-xs text-slate-500 font-medium">Code & IP Ownership</div>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-2xl text-obsidian-950">Zero</div>
+            <div class="text-xs text-slate-500 font-medium">T&M Runaway Hours</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Architectural Pillars Below Hero: 2 Cards Per Row Grid -->
+      <div class="mt-12 sm:mt-16">
+        <div class="flex items-center justify-between mb-6 pb-2 border-b border-slate-200/60">
+          <div class="font-mono text-xs font-bold text-slate-600 uppercase tracking-wider flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+            ASHNEL ARCHITECTURAL STANDARDS
+          </div>
+          <div class="font-mono text-[11px] text-amber-700 font-semibold uppercase">VERIFIED V3.4</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Pillar 1: Precision Engineering -->
+          <div
+            class="group bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center flex-shrink-0 text-amber-600 shadow-sm group-hover:scale-105 transition-transform">
+              <!-- Drafting compass icon -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <circle cx="12" cy="7" r="2.5" stroke-width="2" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 9.5V13m0 0L7 21m5-8l5 8M9 18h6" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm tracking-wider uppercase text-obsidian-950 mb-1">
+                PRECISION ENGINEERING
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Rigorous methodologies applied to every challenge.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Data-Driven Strategy -->
+          <div
+            class="group bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center flex-shrink-0 text-amber-600 shadow-sm group-hover:scale-105 transition-transform">
+              <!-- Trend line with sparkles icon -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L14 14l5-5" />
+                <circle cx="19" cy="9" r="1.5" fill="currentColor" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M18 4l.5 1.5L20 6l-1.5.5L18 8l-.5-1.5L16 6l1.5-.5z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm tracking-wider uppercase text-obsidian-950 mb-1">
+                DATA-DRIVEN STRATEGY
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Decisions backed by empirical evidence and deep analysis.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Institutional Trust -->
+          <div
+            class="group bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center flex-shrink-0 text-amber-600 shadow-sm group-hover:scale-105 transition-transform">
+              <!-- Shield icon -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm tracking-wider uppercase text-obsidian-950 mb-1">
+                INSTITUTIONAL TRUST
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Proven track record with high-stakes enterprise clients.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Accelerated Outcomes -->
+          <div
+            class="group bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-7 shadow-sm hover:shadow-md hover:border-slate-300 transition-all flex items-start gap-4">
+            <div
+              class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200/60 flex items-center justify-center flex-shrink-0 text-amber-600 shadow-sm group-hover:scale-105 transition-transform">
+              <!-- Speedometer / gauge icon -->
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 4v2m-6.364 1.636l1.414 1.414m11.314-1.414l-1.414 1.414M4 12h2m12 0h2" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-heading font-bold text-sm tracking-wider uppercase text-obsidian-950 mb-1">
+                ACCELERATED OUTCOMES
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Efficient execution without compromising on structural integrity.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub-Hero Trust Strip Badges -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
+      <div class="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+
+          <div class="flex items-center gap-3 pt-2 sm:pt-0 sm:px-3">
+            <div
+              class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 font-bold text-sm">
+              🛡️
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">MSME & GST Certified</div>
+              <div class="text-[11px] text-slate-500">Incorporated Studio Entity</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2 sm:pt-0 sm:px-3">
+            <div
+              class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0 font-bold text-sm">
+              ⚡
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Turnkey Fixed-Scope</div>
+              <div class="text-[11px] text-slate-500">Zero T&M Billable Traps</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2 sm:pt-0 sm:px-3">
+            <div
+              class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0 font-bold text-sm">
+              🏛️
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">Religious & Community Partners</div>
+              <div class="text-[11px] text-slate-500">Institutional Governance & Non-Profit Tech</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 pt-2 sm:pt-0 sm:px-3">
+            <div
+              class="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0 font-bold text-sm">
+              📐
+            </div>
+            <div>
+              <div class="text-xs font-bold text-slate-900">25+ Yrs Enterprise Bench</div>
+              <div class="text-[11px] text-slate-500">Battle-Tested Architects</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- THE CORE VALUE PROPOSITION: THE "KNOWING WHERE TO HIT" STORY -->
+  <section id="hammer-story" class="py-20 lg:py-24 bg-obsidian-950 text-white relative overflow-hidden">
+
+    <!-- Architectural grid lines in dark section -->
+    <div class="absolute inset-0 bg-dark-grid opacity-20 pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-12">
+        <div
+          class="inline-flex items-center gap-2 font-mono text-xs font-semibold text-amber-400 uppercase tracking-widest bg-amber-950/60 border border-amber-800/60 px-3 py-1 rounded-full mb-4">
+          The Architectural Imperative
+        </div>
+        <h2
+          class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight leading-tight">
+          Why "Vibe Coding" Fails Without Proper Guardrails
+        </h2>
+      </div>
+
+      <!-- Feature Split Card (Dark Inset Container) -->
+      <div class="bg-obsidian-900/90 rounded-2xl border border-obsidian-700/80 p-8 sm:p-12 shadow-2xl relative">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+
+          <!-- Left Column: The Parable -->
+          <div
+            class="lg:col-span-6 space-y-4 border-b lg:border-b-0 lg:border-r border-obsidian-700/80 pb-8 lg:pb-0 lg:pr-8">
+            <div
+              class="flex items-center gap-2 text-xs font-mono font-semibold text-amber-400 tracking-wider uppercase">
+              <span>The Legend of Steinmetz in the Modern AI Era</span>
+            </div>
+
+            <blockquote
+              class="font-serif text-lg sm:text-xl text-slate-200 italic leading-relaxed pl-4 border-l-2 border-amber-500">
+              "A veteran technician was brought in to fix a machine that noone else could fix. He listened to the
+              machine, and fixed it with a single tap of a hammer.
+              <br><br>
+              On his $10,000 invoice, the plant manager asked for an itemized breakdown. The technician replied:
+              <br>
+              <span class="not-italic font-mono text-amber-300 font-semibold text-base block mt-2">
+                • $1 for tapping with the hammer.<br>
+                • $9,999 for knowing where to tap.
+              </span>"
+            </blockquote>
+          </div>
+
+          <!-- Right Column: The ASHNEL Translation -->
+          <div class="lg:col-span-6 space-y-6">
+            <div
+              class="flex items-center gap-2 text-xs font-mono font-semibold text-slate-400 tracking-wider uppercase">
+              <span>THE ASHNEL ADVANTAGE</span>
+            </div>
+
+            <p class="text-slate-300 text-base leading-relaxed">
+              In today's era of LLMs and generative vibe-coding, <em>anyone</em> can swing the hammer and build out
+              generic code. The real value is <strong>knowing where to tap</strong>, how to enforce data
+              privacy, design failure-resistant data schemas, integrate with external applications, and build not just
+              prototypes, but <strong>robust applications</strong> that are <strong>secure and
+                reliable</strong>.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-obsidian-800/80 rounded-xl p-4 border border-obsidian-700">
+                <div class="font-mono text-xs text-rose-400 font-bold mb-1">VIBE CODED PROTOTYPES</div>
+                <div class="text-xs text-slate-400">Fragile apps, security holes, unindexed database loops,
+                  unmaintainable
+                  sprawl.</div>
+              </div>
+              <div class="bg-obsidian-800/80 rounded-xl p-4 border border-amber-500/40">
+                <div class="font-mono text-xs text-amber-400 font-bold mb-1">ASHNEL ARCHITECTURE</div>
+                <div class="text-xs text-slate-300">Clean modular stacks, strict type safety, zero technical debt
+                  handoff.</div>
+              </div>
+            </div>
+
+            <div
+              class="pt-2 flex items-center justify-between text-xs font-mono text-slate-400 border-t border-obsidian-800">
+              <span>Experienced Advisory Bench</span>
+              <span class="text-amber-400">Strong Product Leadership</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DUAL-TRACK SOLUTION MATRIX -->
+  <section id="dual-track" class="py-20 lg:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div
+          class="inline-flex items-center gap-2 font-mono text-xs font-semibold text-amber-700 uppercase tracking-widest bg-amber-100 border border-amber-200 px-3 py-1 rounded-full mb-3">
+          Dual-Track Execution Engine
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-obsidian-950 tracking-tight">
+          Purpose-Built Solutions for Startup Ventures & Social Sector Institutions
+        </h2>
+        <p class="mt-4 text-base text-slate-600">
+          We operate across many dedicated practices with distinct governance frameworks, guaranteed fixed milestones,
+          and transparent turnkey pricing.
+        </p>
+      </div>
+
+      <!-- Dual Track Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+
+        <!-- Track 1: Early-Stage Founders & Startups -->
+        <div
+          class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 to-amber-600"></div>
+
+          <div>
+            <!-- Header Badge -->
+            <div class="flex items-center justify-between gap-2 mb-6">
+              <span
+                class="font-mono text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">
+                TRACK 01: COMMERCIAL VENTURES
+              </span>
+              <span class="text-[11px] font-mono font-medium text-slate-500">Fixed-Price Turnkey</span>
+            </div>
+
+            <h3 class="font-heading font-bold text-2xl text-obsidian-950 mb-2">
+              For Early-Stage Founders & Startups
+            </h3>
+
+            <div
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full mb-6">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Zero Manpower Billing • 100% Code Ownership</span>
+            </div>
+
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              From idea to launch, we build complete, market-ready products with payment infrastructure, secure
+              authentication, and compliance-ready foundations.
+              Fixed scope. Fixed timelines. Delivered in 30, 60, or 90 days.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-3 mb-8">
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>Turnkey Web & Mobile Apps:</strong>
+                  Responsive production stacks.</div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>Automated Payment Gateways:</strong> Stripe,
+                  Razorpay, and subscription billing configured.</div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>Regulatory & Business Setup:</strong> MSME, GST,
+                  DPDP Compliance, and entity legal architecture.</div>
+              </div>
+            </div>
+
+            <!-- 3-Phase Sprint Roadmap -->
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80 mb-8">
+              <div class="font-mono text-xs font-bold text-slate-800 uppercase tracking-wider mb-3">
+                3-Phase Delivery Sprint Model
+              </div>
+              <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                <div class="bg-white p-2 rounded border border-slate-200">
+                  <div class="font-bold text-amber-700 font-mono">Phase 1</div>
+                  <div class="text-slate-600 text-[11px]">Architecture Blueprint</div>
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-200">
+                  <div class="font-bold text-amber-700 font-mono">Phase 2</div>
+                  <div class="text-slate-600 text-[11px]">Turnkey Build Sprint</div>
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-200">
+                  <div class="font-bold text-amber-700 font-mono">Phase 3</div>
+                  <div class="text-slate-600 text-[11px]">Full Code Handoff</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#estimator" class="w-full btn-primary text-center justify-center">
+            <span>Scope Your Startup MVP</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Track 2: Faith-Based, Educational & Non-Profit Institutions -->
+        <div id="faith-tech"
+          class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-obsidian-800 to-indigo-700"></div>
+
+          <div>
+            <!-- Header Badge -->
+            <div class="flex items-center justify-between gap-2 mb-6">
+              <span
+                class="font-mono text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-md">
+                TRACK 02: INSTITUTIONAL TECH
+              </span>
+              <span class="text-[11px] font-mono font-medium text-slate-500">Stewardship First</span>
+            </div>
+
+            <h3 class="font-heading font-bold text-2xl text-obsidian-950 mb-2">
+              For Non-Profits, Media, Religious & Educational Institutions
+            </h3>
+
+            <div
+              class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-800 bg-indigo-50 px-2.5 py-1 rounded-full mb-6">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              <span>Values-Led Stewardship • Absolute Data Sanctity</span>
+            </div>
+
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              We work on a huge set of open source solutions to provide cost-effective, secure, and private digital
+              presence to non-profits, media houses, religious and educational institutions. Focused on
+              community trust, and governance, we build institutional systems where stakeholder data is never
+              commercialized, monetized, or exploited.
+            </p>
+
+            <!-- Feature Checklist -->
+            <div class="space-y-3 mb-8">
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>People Management Portals:</strong>
+                  Community member records, institutional registries & digital certificates.</div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>Community Ecosystems:</strong> Community
+                  groups, volunteers, matrimony, interactions, etc.</div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div
+                  class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center flex-shrink-0 text-xs font-bold mt-0.5">
+                  ✓</div>
+                <div class="text-xs sm:text-sm text-slate-700"><strong>Learning & E-commerce Portals:</strong>
+                  Video conferencing, Courses & Events, Calendars and Notifications</div>
+              </div>
+            </div>
+
+            <!-- Data Sanctity Charter -->
+            <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 mb-8">
+              <div class="font-mono text-xs font-bold text-indigo-900 uppercase tracking-wider mb-1">
+                Data Sanctity & Privacy Guarantee
+              </div>
+              <p class="text-xs text-indigo-950/80 leading-relaxed">
+                Zero ad tracking. Zero 3rd party telemetry sharing. Isolated database instances with end-to-end audit
+                compliance for ecclesiastical and non-profit requirements.
+              </p>
+            </div>
+          </div>
+
+          <a href="#estimator" class="w-full btn-secondary text-center justify-center">
+            <span>Consult on Packaged Solutions</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROPRIETARY PLATFORMS & CASE STUDIES SECTION -->
+  <section id="assets" class="py-20 lg:py-24 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header with Animated Case Study Link -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div class="max-w-xl">
+          <div
+            class="inline-flex items-center gap-2 font-mono text-xs font-semibold text-amber-700 uppercase tracking-widest bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-3">
+            Proven Intellectual Property & Deployed Systems
+          </div>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-obsidian-950 tracking-tight">
+            Platforms, Projects & Case Studies
+          </h2>
+        </div>
+        <div class="max-w-md space-y-4">
+          <p class="text-sm text-slate-500 leading-relaxed">
+            A battle-tested track record spanning values-led matchmaking, multi-format media streaming, open-source LMS,
+            institutional event systems, and enterprise retail infrastructure.
+          </p>
+          <a href="case-studies/index.html"
+            class="group inline-flex items-center gap-3 text-sm font-bold text-amber-700 hover:text-amber-600 transition-colors">
+            <span>Explore All Production Case Studies</span>
+            <span
+              class="w-9 h-9 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-700 group-hover:bg-amber-100 group-hover:border-amber-300 transition-all shadow-xs">
+              <svg class="w-4 h-4 animate-arrow-bounce-x" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEADERSHIP & GOVERNANCE -->
+  <section id="leadership" class="py-20 lg:py-28 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="max-w-3xl mb-16">
+        <div
+          class="inline-flex items-center gap-2 font-mono text-xs font-semibold text-amber-700 uppercase tracking-widest bg-amber-100 border border-amber-200 px-3 py-1 rounded-full mb-3">
+          Governance & Bench
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-obsidian-950 tracking-tight">
+          Executive Leadership & Engineering Collective
+        </h2>
+        <p class="mt-4 text-base text-slate-600">
+          Our studio blends institutional values, moral stewardship, and high-caliber systems engineering forged across
+          Fortune 50 enterprise platforms.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+
+        <!-- Founder & Managing Director Profile -->
+        <div
+          class="lg:col-span-6 bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 text-white flex items-center justify-center font-serif text-2xl font-bold shadow-md">
+                AN
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-xl text-obsidian-950">Aasha Nevil Jose</h3>
+                <div class="text-xs font-mono text-amber-700 font-semibold uppercase tracking-wider">Managing Director &
+                  Founder</div>
+                <div class="text-xs text-slate-500 mt-0.5">ASHNEL INC. • Est. 2016</div>
+              </div>
+            </div>
+
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Aasha brings deep institutional grounding as an educationalist, faith leader, and active
+              participant in Community council bodies. Her leadership anchors ASHNEL's uncompromising commitment to
+              ethical business compliance, community stewardship, and data protection for sensitive organizations.
+            </p>
+
+            <div class="space-y-2.5 pt-4 border-t border-slate-100 text-xs text-slate-700">
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span>Community & Educational Tech Stewardship</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span>Statutory Governance Compliance</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                <span>Ethical Frameworks for Platform Member Data</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-mono">
+            <span>Bangalore HQ</span>
+            <span class="text-emerald-700 font-semibold">Active Studio Governance</span>
+          </div>
+        </div>
+
+        <!-- Principal Advisory & Engineering Collective -->
+        <div
+          class="lg:col-span-6 bg-obsidian-950 text-white rounded-2xl border border-obsidian-800 p-8 sm:p-10 shadow-xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-16 h-16 rounded-2xl bg-obsidian-800 border border-obsidian-700 text-amber-400 flex items-center justify-center font-mono text-xl font-bold shadow-md">
+                25+
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-xl text-white">Principal Advisory Council</h3>
+                <div class="text-xs font-mono text-amber-400 font-semibold uppercase tracking-wider">Engineering
+                  Collective</div>
+                <div class="text-xs text-slate-400 mt-0.5">Enterprise Systems Architecture</div>
+              </div>
+            </div>
+
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Our engineering backbone is steered by senior enterprise architects with decades of
+              experience in mission-critical environments, including Energy, Healthcare & Industrial
+              data systems, high-concurrency payment networks, and modern AI pipelines.
+            </p>
+
+            <div class="space-y-2.5 pt-4 border-t border-obsidian-800 text-xs text-slate-300">
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                <span>Systems & Distributed Database Reliability</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                <span>Turnkey Full-Stack Architecture</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                <span>Zero-Vulnerability Security & Data Isolation Protocols</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mt-8 pt-4 border-t border-obsidian-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+            <span>Architecture Review Board</span>
+            <span class="text-amber-400 font-semibold">Zero-Debt Guarantee</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE INTAKE FUNNEL & ESTIMATOR -->
+  <section id="estimator" class="py-20 lg:py-28 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <div
+          class="inline-flex items-center gap-2 font-mono text-xs font-semibold text-amber-700 uppercase tracking-widest bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-3">
+          Fixed-Scope Calculator
+        </div>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-obsidian-950 tracking-tight">
+          Ready to Build Without Scope Creep or Runaway Invoices?
+        </h2>
+        <p class="mt-3 text-base text-slate-600">
+          Configure your product requirements below to generate an immediate scope estimate and request an architect
+          review.
+        </p>
+      </div>
+
+      <!-- Estimator Card -->
+      <div class="bg-slate-50 rounded-2xl border border-slate-300/80 p-6 sm:p-10 shadow-lg relative">
+
+        <!-- Step Indicators -->
+        <div class="flex items-center justify-between mb-8 pb-6 border-b border-slate-200">
+          <div id="step-indicator-1" class="step-badge active">
+            <span class="step-num">1</span>
+            <span class="step-label">Select Track</span>
+          </div>
+          <div class="h-0.5 flex-1 bg-slate-200 mx-2"></div>
+          <div id="step-indicator-2" class="step-badge">
+            <span class="step-num">2</span>
+            <span class="step-label">Timeline & Speed</span>
+          </div>
+          <div class="h-0.5 flex-1 bg-slate-200 mx-2"></div>
+          <div id="step-indicator-3" class="step-badge">
+            <span class="step-num">3</span>
+            <span class="step-label">Scope & Booking</span>
+          </div>
+        </div>
+
+        <form id="intake-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+
+          <!-- STEP 1: Select Track -->
+          <div id="step-1-content" class="step-content space-y-6">
+            <label class="block font-heading font-bold text-sm text-obsidian-950 uppercase tracking-wider">
+              Step 1: Choose Your Project Category
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+              <label
+                class="track-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="project_track" value="startup_mvp" class="sr-only" checked
+                  onchange="updateSummary()">
+                <div>
+                  <div class="text-xl mb-2">🚀</div>
+                  <div class="font-bold text-sm text-slate-900">New Startup MVP</div>
+                  <div class="text-xs text-slate-500 mt-1">Turnkey app, database, auth & Stripe billing handoff.</div>
+                </div>
+                <div class="mt-4 font-mono text-[11px] text-amber-700 font-bold">Fixed Turnkey</div>
+              </label>
+
+              <label
+                class="track-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="project_track" value="faith_portal" class="sr-only"
+                  onchange="updateSummary()">
+                <div>
+                  <div class="text-xl mb-2">🏛️</div>
+                  <div class="font-bold text-sm text-slate-900">Religious & Community Portal</div>
+                  <div class="text-xs text-slate-500 mt-1">Institutional records, community platforms & member
+                    governance.</div>
+                </div>
+                <div class="mt-4 font-mono text-[11px] text-indigo-700 font-bold">Stewardship First</div>
+              </label>
+
+              <label
+                class="track-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="project_track" value="compliance_setup" class="sr-only"
+                  onchange="updateSummary()">
+                <div>
+                  <div class="text-xl mb-2">⚖️</div>
+                  <div class="font-bold text-sm text-slate-900">Compliance & Advisory</div>
+                  <div class="text-xs text-slate-500 mt-1">MSME, GST setup, payments & architectural review.</div>
+                </div>
+                <div class="mt-4 font-mono text-[11px] text-slate-700 font-bold">SOW Blueprint</div>
+              </label>
+
+            </div>
+
+            <div class="flex justify-end pt-4">
+              <button type="button" onclick="goToStep(2)" class="btn-primary">
+                <span>Continue to Timeline</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Timeline & Speed -->
+          <div id="step-2-content" class="step-content hidden space-y-6">
+            <label class="block font-heading font-bold text-sm text-obsidian-950 uppercase tracking-wider">
+              Step 2: Desired Velocity & Delivery Window
+            </label>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+              <label
+                class="timeline-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="timeline" value="30_days" class="sr-only" checked onchange="updateSummary()">
+                <div>
+                  <div class="font-bold text-sm text-slate-900">30-Day Sprint</div>
+                  <div class="text-xs text-slate-500 mt-1">High-velocity, focused core features, rapid market
+                    validation.</div>
+                </div>
+                <div class="mt-3 font-mono text-[11px] text-amber-700 font-semibold">Fastest Turnaround</div>
+              </label>
+
+              <label
+                class="timeline-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="timeline" value="60_days" class="sr-only" onchange="updateSummary()">
+                <div>
+                  <div class="font-bold text-sm text-slate-900">60-Day Full Platform</div>
+                  <div class="text-xs text-slate-500 mt-1">Complete system with multi-role permissions, analytics &
+                    integrations.</div>
+                </div>
+                <div class="mt-3 font-mono text-[11px] text-slate-700 font-semibold">Standard Scope</div>
+              </label>
+
+              <label
+                class="timeline-option cursor-pointer rounded-xl border-2 border-slate-200 p-4 bg-white hover:border-amber-400 transition-all flex flex-col justify-between">
+                <input type="radio" name="timeline" value="exploratory" class="sr-only" onchange="updateSummary()">
+                <div>
+                  <div class="font-bold text-sm text-slate-900">Exploratory Advisory</div>
+                  <div class="text-xs text-slate-500 mt-1">Architecture blueprinting, schema validation & feasibility
+                    study.</div>
+                </div>
+                <div class="mt-3 font-mono text-[11px] text-slate-700 font-semibold">Advisory Sprint</div>
+              </label>
+
+            </div>
+
+            <div class="flex items-center justify-between pt-4">
+              <button type="button" onclick="goToStep(1)" class="btn-secondary">
+                <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span>Back</span>
+              </button>
+              <button type="button" onclick="goToStep(3)" class="btn-primary">
+                <span>Review Scope & Book</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Scope Details & Booking Submission -->
+          <div id="step-3-content" class="step-content hidden space-y-6">
+
+            <!-- Live Summary Box -->
+            <div class="bg-obsidian-950 text-white rounded-xl p-5 border border-obsidian-800">
+              <div class="flex items-center justify-between border-b border-obsidian-800 pb-3 mb-3">
+                <span class="text-xs font-mono uppercase text-amber-400">Sprint Summary Blueprint</span>
+                <span class="text-[11px] font-mono text-emerald-400">Fixed-Price SOW Ready</span>
+              </div>
+              <div class="grid grid-cols-2 gap-4 text-xs">
+                <div>
+                  <div class="text-slate-400">Selected Track:</div>
+                  <div id="summary-track" class="font-semibold text-white mt-0.5">New Startup MVP</div>
+                </div>
+                <div>
+                  <div class="text-slate-400">Delivery Velocity:</div>
+                  <div id="summary-timeline" class="font-semibold text-amber-300 mt-0.5">30-Day Sprint</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">Your
+                  Name</label>
+                <input type="text" id="intake-name" required placeholder="e.g. David Paul"
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">Work Email /
+                  Contact</label>
+                <input type="email" id="intake-email" required placeholder="name@organization.com"
+                  class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">Brief Project
+                Description or Current Bottleneck</label>
+              <textarea id="intake-scope" rows="3"
+                placeholder="Tell us what you're building, key integrations needed, or any specific compliance goals..."
+                class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white"></textarea>
+            </div>
+
+            <div class="flex items-center justify-between pt-4">
+              <button type="button" onclick="goToStep(2)" class="btn-secondary">
+                <svg class="w-4 h-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span>Back</span>
+              </button>
+              <button type="submit" class="btn-primary">
+                <span>Submit & Open Advisory Calendar</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+        </form>
+
+        <!-- Success Notification (Hidden by default) -->
+        <div id="intake-success" class="hidden text-center py-10 space-y-4">
+          <div
+            class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto text-2xl">
+            ✓
+          </div>
+          <h3 class="font-heading font-extrabold text-2xl text-obsidian-950">Intake Received</h3>
+          <p class="text-sm text-slate-600 max-w-md mx-auto">
+            Your turnkey specification has been routed to our Principal Advisory Bench. We will review your architecture
+            requirements and reach out within 24 hours.
+          </p>
+          <div class="pt-4">
+            <button onclick="resetIntake()" class="btn-secondary text-xs">Configure Another Estimate</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-obsidian-950 text-slate-400 border-t border-obsidian-800 pt-16 pb-12 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-obsidian-800">
+
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-white.png" alt="ASHNEL INC." class="h-10 sm:h-11 w-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Digital product studio and enterprise systems advisory. We deliver complete, fixed-scope turnkey software
+            with verified data sanctity and zero agency bloat.
+          </p>
+          <div class="font-mono text-xs text-amber-400/90 pt-1">
+            Bangalore Studio • MSME Registered Entity • GSTIN Compliant
+          </div>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Practices & Solutions</div>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#dual-track" class="hover:text-amber-400 transition-colors">Turnkey MVP Engineering</a></li>
+            <li><a href="case-studies/index.html"
+                class="hover:text-amber-400 transition-colors text-amber-400 font-semibold">Case Studies &
+                Blueprints</a></li>
+            <li><a href="#faith-tech" class="hover:text-amber-400 transition-colors">Religious & Community Portals</a>
+            </li>
+            <li><a href="case-studies/matrimony-dating.html" class="hover:text-amber-400 transition-colors">Matrimony &
+                Dating Ecosystem</a></li>
+            <li><a href="#thought-leadership" class="hover:text-amber-400 transition-colors">Enterprise Systems
+                Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Institutional Policies</div>
+          <ul class="space-y-2 text-xs">
+            <li><button onclick="openModal('sow-modal')"
+                class="hover:text-amber-400 transition-colors text-left">Fixed-Scope SOW & IP Guarantee</button></li>
+            <li><button onclick="openModal('privacy-modal')"
+                class="hover:text-amber-400 transition-colors text-left">Privacy & Data Sanctity Charter</button></li>
+            <li><button onclick="openModal('contact-modal')"
+                class="hover:text-amber-400 transition-colors text-left">Contact Advisory Desk</button></li>
+          </ul>
+          <div class="pt-4">
+            <a href="#estimator"
+              class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 bg-amber-950/60 border border-amber-800/60 px-3 py-1.5 rounded-lg hover:bg-amber-900/60 transition-colors">
+              <span>Initiate SOW Scope Form</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal & Copyright Line -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 ASHNEL INC. All Rights Reserved. MSME Registered Enterprise. GSTIN Compliant.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="#" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
+          <a href="#" class="hover:text-slate-400 transition-colors">Ethical Stewardship</a>
+          <a href="#main-header" class="hover:text-amber-400 transition-colors">Back to top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Modal 1: Matrimony & Dating Ecosystem -->
+  <div id="matrimony-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('matrimony-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-indigo-700 font-bold uppercase mb-1">Architecture Case Study • Capability 01
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Matrimony & Dating Ecosystem</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        A mission-critical community matchmaking architecture built to restore verified trust to values-led matrimony
+        and community connections.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Strict Verification Architecture:</strong> Multi-tier validation requiring institutional records,
+          identity vetting, and community-level authorization prior to profile activation.</div>
+        <div><strong>• Privacy Preservation:</strong> Member contact coordinates and identifiers are protected through
+          tokenized messaging proxies.</div>
+        <div><strong>• Zero Data Commercialization:</strong> Strict non-commercial privacy mandate eliminating
+          third-party tracking, profiling, or ad monetization.</div>
+        <div><strong>• Tech Stack:</strong> Django / Python / PostgreSQL / Redis / Multi-Region Cloud Deployment.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('matrimony-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Media Management Platform -->
+  <div id="media-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('media-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-amber-700 font-bold uppercase mb-1">Architecture Case Study • Capability 02
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Media Management Platform</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        An omni-channel media streaming and digital asset repository engineered for high-concurrency video playback,
+        multi-platform podcast syndication, and digital publishing.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Hybrid Video Ingestion & Delivery:</strong> Vimeo OTT and YouTube API pipelines with adaptive
+          bitrate streaming and media asset DRM.</div>
+        <div><strong>• Podcast RSS Syndication:</strong> Centralized audio management feed distributed to major global
+          podcasting networks.</div>
+        <div><strong>• Digital Asset Engine:</strong> Structured content taxonomy for rapid archival retrieval, tagging,
+          and multi-tenant access.</div>
+        <div><strong>• Tech Stack:</strong> Next.js / Vimeo OTT SDK / YouTube Data API / Podcastics / AWS S3 /
+          Cloudflare CDN.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('media-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Learning Management System -->
+  <div id="lms-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('lms-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-emerald-700 font-bold uppercase mb-1">Architecture Case Study • Capability 03
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Institutional Learning Management System
+      </h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Open-source learning management architecture customized on the <strong>Frappe Framework</strong> to power
+        structured curricula, leadership development, and training cohorts.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Structured Course Modules:</strong> Multi-lesson video curricula with reading materials,
+          assessments, and interactive progress tracking.</div>
+        <div><strong>• Role-Based Governance:</strong> Multi-tiered permissions for administrators, instructors, and
+          registered students.</div>
+        <div><strong>• Automated Certification Engine:</strong> Instant generation and cryptographic verification of
+          course completion certificates.</div>
+        <div><strong>• Tech Stack:</strong> Frappe LMS / Python / MariaDB / Redis / Tailwind CSS.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('lms-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Event Management & Training Portal -->
+  <div id="event-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('event-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-indigo-700 font-bold uppercase mb-1">Architecture Case Study • Capability 04
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Event Management & Training Portal</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        An integrated course administration and live event platform designed for institutional workshops,
+        certifications, and counseling intakes.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• In-Browser Video Conferencing:</strong> Native Zoom Video SDK integration allowing participants
+          to join live classroom sessions seamlessly without third-party installations.</div>
+        <div><strong>• Registration & Payment Processing:</strong> Automated batch booking, capacity limits, calendar
+          scheduling, and automated tax receipts.</div>
+        <div><strong>• Attendance & Completion Tracking:</strong> Real-time session attendance verification linked with
+          automated certificate issuance.</div>
+        <div><strong>• Tech Stack:</strong> Python / PHP / Zoom Video SDK / PostgreSQL / Payment Gateway Rails.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('event-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: Retail & E-Commerce Operations -->
+  <div id="retail-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('retail-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-emerald-700 font-bold uppercase mb-1">Architecture Case Study • Capability 05
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Retail & E-Commerce Operations</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        An end-to-end ERPNext-backed commerce platform engineered for retail distribution, supply chain management, and
+        automated tax accounting.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Inventory & Warehouse Operations:</strong> Real-time multi-location inventory tracking with
+          automated replenishment thresholds.</div>
+        <div><strong>• Automated GST Invoicing:</strong> Instant tax-compliant invoicing and ledger reconciliation
+          within the ERP backbone.</div>
+        <div><strong>• Payment Rails & Logistics:</strong> Multi-gateway payments (Stripe/Razorpay) synchronized with
+          automated courier dispatch manifests.</div>
+        <div><strong>• Tech Stack:</strong> ERPNext / Frappe Commerce / Python / MariaDB / Redis.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('retail-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Digital Broadcast Outreach -->
+  <div id="broadcast-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('broadcast-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-amber-700 font-bold uppercase mb-1">Architecture Case Study • Capability 06
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Digital Broadcast Outreach</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        A high-concurrency digital media broadcast platform delivering multi-lingual audio/video streams, broadcast
+        archives, and automated community outreach.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Multi-Lingual Streaming:</strong> High-efficiency content delivery across regional language
+          feeds.</div>
+        <div><strong>• Edge-Cached Media Delivery:</strong> Low-latency streaming optimized for mobile devices across
+          varying network conditions.</div>
+        <div><strong>• Community Subscriptions:</strong> Automated newsletter distribution and live broadcast
+          notifications.</div>
+        <div><strong>• Tech Stack:</strong> Headless Content Architecture / Cloudflare CDN / Multi-Channel Streaming
+          Rails.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('broadcast-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Literature & Digital Publishing -->
+  <div id="publishing-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('publishing-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-slate-700 font-bold uppercase mb-1">Architecture Case Study • Capability 07
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Literature & Digital Publishing</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Digital publishing framework for distributing books, periodicals, and institutional research with sovereign data
+        privacy.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• Sovereign Data Enclaves:</strong> Zero-telemetry reader architecture guaranteeing reader privacy
+          against commercial tracking.</div>
+        <div><strong>• Responsive Digital Reader:</strong> Seamless cross-device e-reader with offline caching and
+          indexed search.</div>
+        <div><strong>• Published Literature:</strong> Authoring and digital distribution engine powering studio
+          literature including <em>"The All-Seeing Digital Eyes"</em>.</div>
+        <div><strong>• Tech Stack:</strong> Digital Reader Engine / AWS S3 / Service Worker Offline Caching.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('publishing-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Office & Community Management -->
+  <div id="community-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('community-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-indigo-700 font-bold uppercase mb-1">Architecture Case Study • Capability 08
+      </div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Office & Community Management</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        A comprehensive administrative suite for institutional registries, volunteer coordination, and 24/7 community
+        intercession workflows.
+      </p>
+      <div class="space-y-3 bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 mb-6">
+        <div><strong>• 24/7 Automated Prayer Chains:</strong> Automated scheduling system coordinating round-the-clock
+          worldwide prayer coverage.</div>
+        <div><strong>• Moderated Intercession Walls:</strong> Real-time prayer requests with moderator approval and
+          confidential options.</div>
+        <div><strong>• Registry & Volunteer Mobilization:</strong> Secure member directories, volunteer onboarding, and
+          community leadership channels.</div>
+        <div><strong>• Tech Stack:</strong> React / Node.js / WebSockets / PostgreSQL / Redis.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('community-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Book Abstract -->
+  <div id="book-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('book-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-amber-700 font-bold uppercase mb-1">Published Work • ASHNEL INC.</div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">"The All-Seeing Digital Eyes"</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        A deep treatise into institutional governance, cloud data sovereignty, and how modern organizations can
+        construct private digital enclaves free from invasive third-party telemetry.
+      </p>
+      <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-200 text-xs text-slate-800 space-y-2 mb-6">
+        <div class="font-semibold text-amber-900">Key Themes Covered:</div>
+        <div>1. The illusion of free platforms vs. true data sovereignty.</div>
+        <div>2. Designing zero-trust databases for non-profit and ecclesiastical registries.</div>
+        <div>3. Legal compliance frameworks across Indian and International privacy charters.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('book-modal')" class="btn-secondary text-xs">Close Abstract</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: White Paper -->
+  <div id="whitepaper-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('whitepaper-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-slate-700 font-bold uppercase mb-1">Architecture White Paper</div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">"The Vibe Coding Hangover"</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        Why AI-generated boilerplate leads to critical production vulnerabilities unless governed by senior enterprise
+        systems engineering.
+      </p>
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2 mb-6">
+        <div><strong>Key Takeaway:</strong> LLMs generate syntactically valid code that frequently violates basic
+          transaction isolation, concurrency locking, and schema indexing.</div>
+        <div><strong>The Solution:</strong> Fixed-scope engineering directed by 25+ year architects who know <em>where
+            to hit</em>.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('whitepaper-modal')" class="btn-secondary text-xs">Close Preview</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: SOW Policy -->
+  <div id="sow-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('sow-modal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-amber-700 font-bold uppercase mb-1">Contractual Charter</div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Fixed-Scope SOW Policy</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        ASHNEL INC. operates exclusively on defined, milestone-based Statements of Work (SOW). We do not bill open-ended
+        hourly rates or surprise retainers.
+      </p>
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2 mb-6">
+        <div><strong>1. 100% Code Ownership:</strong> All repositories, assets, and deployment keys are transferred upon
+          milestone completion.</div>
+        <div><strong>2. No Agency Lock-in:</strong> Clean, standard architecture that any competent engineer can
+          maintain.</div>
+        <div><strong>3. GST Invoiced:</strong> Fully tax-compliant MSME invoicing.</div>
+      </div>
+      <div class="flex justify-end">
+        <button onclick="closeModal('sow-modal')" class="btn-secondary text-xs">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Privacy Policy -->
+  <div id="privacy-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div
+      class="bg-white rounded-2xl border border-slate-200 max-w-2xl w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('privacy-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-indigo-700 font-bold uppercase mb-1">Institutional Governance</div>
+      <h3 class="font-heading font-extrabold text-2xl text-obsidian-950 mb-4">Privacy & Data Sanctity Charter</h3>
+      <p class="text-sm text-slate-600 leading-relaxed mb-4">
+        We treat community, institutional member, and user data as sacred. We never implement surveillance trackers,
+        third-party
+        pixel injectors, or unconsented telemetry in client software.
+      </p>
+      <div class="flex justify-end">
+        <button onclick="closeModal('privacy-modal')" class="btn-secondary text-xs">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Contact Desk -->
+  <div id="contact-modal"
+    class="modal-backdrop hidden fixed inset-0 z-50 bg-obsidian-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl border border-slate-200 max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="closeModal('contact-modal')"
+        class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <div class="font-mono text-xs text-amber-700 font-bold uppercase mb-1">Advisory Desk</div>
+      <h3 class="font-heading font-extrabold text-xl text-obsidian-950 mb-4">Contact ASHNEL INC.</h3>
+      <div class="space-y-3 text-xs text-slate-700 mb-6">
+        <div><strong>Studio Headquarters:</strong> Bangalore, Karnataka, India</div>
+        <div><strong>Legal Status:</strong> MSME Registered Enterprise</div>
+        <div><strong>Direct Inquiries:</strong> <a href="mailto:advisory@ashnel.com"
+            class="text-amber-700 font-semibold underline">advisory@ashnel.com</a></div>
+      </div>
+      <a href="#estimator" onclick="closeModal('contact-modal')"
+        class="w-full btn-primary text-center justify-center text-xs">
+        <span>Open Project Scope Estimator</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
