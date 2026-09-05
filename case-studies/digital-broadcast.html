@@ -38,7 +38,13 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="bg-white text-slate-800 font-body antialiased selection:bg-amber-100 selection:text-amber-900">
+<body class="bg-white text-slate-800 font-body antialiased selection:bg-amber-100 selection:text-amber-900 relative">
+
+  <!-- Fixed Ambient Architectural Watermark (Concept 1: Curtain Reveal) -->
+  <div id="ambient-watermark"
+    class="fixed -right-20 sm:-right-28 md:-right-36 lg:-right-44 -bottom-16 sm:-bottom-24 md:-bottom-32 lg:-bottom-36 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[680px] pointer-events-none select-none opacity-50 z-0 transition-opacity duration-300">
+    <img src="../assets/Logo@.png" alt="" class="w-full h-full object-contain">
+  </div>
 
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
@@ -52,7 +58,7 @@
           <span>/</span>
           <a href="index.html" class="hover:text-slate-700">Case Studies</a>
           <span>/</span>
-          <span class="text-obsidian-950 font-bold">Multiverse 06: Digital Broadcast</span>
+          <span class="text-obsidian-950 font-bold">Metaverse 06: Digital Broadcast</span>
         </div>
       </div>
 
@@ -67,20 +73,14 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden pt-10 pb-12 lg:pt-12 lg:pb-16 bg-slate-50 border-b border-slate-200">
-
-    <!-- Background Watermark Logo (50% Opacity, trimmed right and bottom) -->
-    <div
-      class="absolute -right-20 sm:-right-28 md:-right-36 lg:-right-40 -bottom-16 sm:-bottom-24 md:-bottom-32 lg:-bottom-36 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[680px] pointer-events-none select-none opacity-50 z-0">
-      <img src="../assets/Logo@.png" alt="" class="w-full h-full object-contain">
-    </div>
+  <section class="relative z-10 overflow-hidden pt-10 pb-12 lg:pt-12 lg:pb-16 bg-slate-50/80 border-b border-slate-200">
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl">
         <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
-            <span class="font-mono text-xs font-bold text-orange-700 uppercase tracking-widest">Multiverse 06 • Media & Broadcast</span>
+            <span class="font-mono text-xs font-bold text-orange-700 uppercase tracking-widest">Metaverse 06 • Media & Broadcast</span>
           </div>
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-mono font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
@@ -122,7 +122,7 @@
   </section>
 
   <!-- Deep Dive Body -->
-  <section class="py-12 sm:py-16">
+  <section class="relative z-10 py-12 sm:py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
       <!-- Challenge -->
@@ -244,15 +244,15 @@
 
       <!-- Navigation -->
       <div class="pt-8 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <a href="retail-ecommerce.html" class="text-sm font-semibold text-slate-600 hover:text-obsidian-950">&larr; Multiverse 05: Retail Operations</a>
-        <a href="literature-publishing.html" class="text-sm font-semibold text-amber-700 hover:text-amber-800">Explore Next: Literature & Publishing &rarr;</a>
+        <a href="retail-ecommerce.html" class="text-sm font-semibold text-slate-600 hover:text-obsidian-950">&larr; Metaverse 05: Retail Operations</a>
+        <a href="literature-publishing.html" class="text-sm font-semibold text-amber-700 hover:text-amber-800">Explore Next: Metaverse 07 - Literature & Publishing &rarr;</a>
       </div>
 
     </div>
   </section>
 
   <!-- CTA Banner -->
-  <section class="py-12 bg-obsidian-950 text-white">
+  <section class="relative z-20 py-12 bg-obsidian-950 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
       <div>
         <div class="font-mono text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Turnkey Broadcast Infrastructure</div>
@@ -268,7 +268,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-obsidian-950 border-t border-obsidian-900 py-8 text-slate-400 text-xs">
+  <footer class="relative z-20 bg-obsidian-950 border-t border-obsidian-900 py-8 text-slate-400 text-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div>&copy; 2016&ndash;2026 ASHNEL INC. All rights reserved. Registered MSME Enterprise.</div>
       <div class="flex items-center gap-6">

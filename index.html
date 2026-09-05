@@ -60,10 +60,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-canvas text-slate-900 font-sans antialiased selection:bg-amber-100 selection:text-amber-900">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-amber-100 selection:text-amber-900 relative">
+
+  <!-- Fixed Ambient Architectural Watermark (Concept 1: Curtain Reveal) -->
+  <div id="ambient-watermark"
+    class="fixed -right-20 sm:-right-28 md:-right-36 lg:-right-44 -bottom-16 sm:-bottom-24 md:-bottom-32 lg:-bottom-36 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[680px] lg:h-[680px] pointer-events-none select-none opacity-50 z-0 transition-opacity duration-300">
+    <img src="assets/Logo@.png" alt="" class="w-full h-full object-contain">
+  </div>
 
   <!-- Top System Bar -->
-  <div class="bg-obsidian-950 text-slate-400 text-xs py-2 px-4 border-b border-obsidian-800">
+  <div class="relative z-20 bg-obsidian-950 text-slate-400 text-xs py-2 px-4 border-b border-obsidian-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
       <div class="flex flex-wrap items-center gap-2 sm:gap-3">
         <span
@@ -219,17 +225,9 @@
 
   <!-- HERO SECTION WITH INTEGRATED 4 ARCHITECTURAL PILLARS -->
   <section
-    class="relative pt-10 pb-12 lg:pt-12 lg:pb-16 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 border-b border-slate-200">
+    class="relative z-10 pt-10 pb-12 lg:pt-12 lg:pb-16 overflow-hidden bg-gradient-to-b from-slate-50/70 via-white/60 to-slate-50/70 border-b border-slate-200">
 
-    <!-- Background Structural Grid Graphic -->
-    <div class="absolute inset-0 bg-grid-pattern opacity-40 pointer-events-none"></div>
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none"></div>
-
-    <!-- Background Watermark Logo (50% Opacity, partly trimmed on right side) -->
-    <div
-      class="absolute -right-24 sm:-right-32 md:-right-44 lg:-right-48 top-16 sm:top-12 lg:top-1/2 lg:-translate-y-1/2 w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] md:w-[580px] md:h-[580px] lg:w-[720px] lg:h-[720px] pointer-events-none select-none opacity-50 z-0">
-      <img src="assets/Logo@.png" alt="" class="w-full h-full object-contain">
-    </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -461,7 +459,7 @@
   </section>
 
   <!-- THE CORE VALUE PROPOSITION: THE "KNOWING WHERE TO HIT" STORY -->
-  <section id="hammer-story" class="py-12 lg:py-16 bg-obsidian-950 text-white relative overflow-hidden">
+  <section id="hammer-story" class="py-12 lg:py-16 bg-obsidian-950 text-white relative z-20 overflow-hidden">
 
     <!-- Architectural grid lines in dark section -->
     <div class="absolute inset-0 bg-dark-grid opacity-20 pointer-events-none"></div>
@@ -552,7 +550,7 @@
   </section>
 
   <!-- DUAL-TRACK SOLUTION MATRIX -->
-  <section id="dual-track" class="py-12 lg:py-16 bg-slate-50">
+  <section id="dual-track" class="py-12 lg:py-16 bg-slate-50/80 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Section Header -->
@@ -578,7 +576,7 @@
           class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
           <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 to-amber-600"></div>
 
-          <div>
+          <div class="relative z-10">
             <!-- Header Badge -->
             <div class="flex items-center justify-between gap-2 mb-6">
               <span
@@ -653,7 +651,7 @@
             </div>
           </div>
 
-          <a href="#estimator" class="w-full btn-primary text-center justify-center">
+          <a href="#estimator" class="relative z-10 w-full btn-primary text-center justify-center">
             <span>Scope Your Startup MVP</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -666,7 +664,7 @@
           class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between relative overflow-hidden">
           <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-obsidian-800 to-indigo-700"></div>
 
-          <div>
+          <div class="relative z-10">
             <!-- Header Badge -->
             <div class="flex items-center justify-between gap-2 mb-6">
               <span
@@ -733,7 +731,7 @@
             </div>
           </div>
 
-          <a href="#estimator" class="w-full btn-secondary text-center justify-center">
+          <a href="#estimator" class="relative z-10 w-full btn-secondary text-center justify-center">
             <span>Consult on Packaged Solutions</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -747,7 +745,7 @@
   </section>
 
   <!-- PROPRIETARY PLATFORMS & CASE STUDIES SECTION -->
-  <section id="assets" class="py-12 lg:py-14 bg-white border-y border-slate-200">
+  <section id="assets" class="py-12 lg:py-14 bg-white/80 border-y border-slate-200 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Section Header with Animated Case Study Link -->
@@ -783,7 +781,7 @@
   </section>
 
   <!-- LEADERSHIP & GOVERNANCE -->
-  <section id="leadership" class="py-12 lg:py-16 bg-slate-50">
+  <section id="leadership" class="py-12 lg:py-16 bg-slate-50/80 relative z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="max-w-3xl mb-10">
@@ -796,7 +794,7 @@
         </h2>
         <p class="mt-4 text-base text-slate-600">
           Our studio blends institutional values, moral stewardship, and high-caliber systems engineering forged across
-          Fortune 50 enterprise platforms.
+          enterprise platforms.
         </p>
       </div>
 
@@ -902,7 +900,7 @@
   </section>
 
   <!-- INTERACTIVE INTAKE FUNNEL & ESTIMATOR -->
-  <section id="estimator" class="py-12 lg:py-16 bg-white border-t border-slate-200">
+  <section id="estimator" class="py-12 lg:py-16 bg-white/80 border-t border-slate-200 relative z-10">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <!-- Section Header -->
@@ -1102,14 +1100,15 @@
                 class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm bg-white"></textarea>
             </div>
 
-            <!-- DPDP Act 2023 Statutory Consent -->
+            <!-- Data Privacy Consent -->
             <div class="pt-1">
               <label class="flex items-start gap-2.5 text-xs text-slate-600 cursor-pointer select-none">
                 <input type="checkbox" id="estimator-dpdp-consent" required
                   class="mt-0.5 rounded border-slate-300 text-amber-600 focus:ring-amber-500 h-4 w-4 shrink-0">
                 <span class="leading-relaxed">
-                  <strong>DPDP Consent:</strong> I voluntarily consent to ASHNEL INC. collecting and processing my submitted details solely for evaluating this project scope, under the
-                  <a href="privacy.html" target="_blank" class="text-amber-700 underline font-semibold">DPDP Privacy Charter</a> and
+                  <strong>Privacy Consent:</strong> I voluntarily consent to ASHNEL INC. collecting and processing my
+                  submitted details solely for evaluating this project scope, under the
+                  <a href="privacy.html" target="_blank" class="text-amber-700 underline font-semibold">Privacy Policy</a> and
                   <a href="terms.html" target="_blank" class="text-amber-700 underline font-semibold">Terms of Engagement</a>.
                 </span>
               </label>
@@ -1159,7 +1158,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-obsidian-950 text-slate-400 border-t border-obsidian-800 pt-12 pb-8 text-sm">
+  <footer class="bg-obsidian-950 text-slate-400 border-t border-obsidian-800 pt-12 pb-8 text-sm relative z-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-10 border-b border-obsidian-800">
@@ -1195,10 +1194,10 @@
         </div>
 
         <div class="md:col-span-4 space-y-3">
-          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Institutional Policies</div>
+          <div class="font-mono text-xs font-semibold text-white uppercase tracking-wider">Corporate Governance</div>
           <ul class="space-y-2 text-xs">
-            <li><a href="terms.html" class="hover:text-amber-400 transition-colors">Terms of Engagement & IP</a></li>
-            <li><a href="privacy.html" class="hover:text-amber-400 transition-colors">DPDP Privacy & Data Charter</a></li>
+            <li><a href="terms.html" class="hover:text-amber-400 transition-colors">Terms of Engagement</a></li>
+            <li><a href="privacy.html" class="hover:text-amber-400 transition-colors">Privacy Policy</a></li>
             <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact Advisory Desk</a></li>
           </ul>
           <div class="pt-4">
@@ -1221,7 +1220,7 @@
         </div>
         <div class="flex items-center gap-6">
           <a href="terms.html" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
-          <a href="privacy.html" class="hover:text-slate-400 transition-colors">Privacy Charter</a>
+          <a href="privacy.html" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
           <a href="contact.html" class="hover:text-amber-400 transition-colors">Contact Us</a>
           <a href="#main-header" class="hover:text-amber-400 transition-colors">Back to top ↑</a>
         </div>
